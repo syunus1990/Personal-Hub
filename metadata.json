@@ -1,0 +1,6 @@
+{
+  "name": "Personal Hub",
+  "description": "A private personal productivity hub integrating follow-ups, fast daily expenses & money accounts, dual-currency INR/SAR personal loans, notes, calendar, security lock screen, and encrypted backup.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
