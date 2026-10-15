@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="listokBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0E7FF" />
+      <stop offset="50%" stop-color="#EDE9FE" />
+      <stop offset="100%" stop-color="#FCE7F3" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#4F46E5" flood-opacity="0.12" />
+    </filter>
+  </defs>
+  <!-- Background squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#listokBg)" />
+  <!-- Glassmorphic floating card -->
+  <rect x="76" y="86" width="360" height="340" rx="44" fill="#FFFFFF" fill-opacity="0.85" filter="url(#cardShadow)" />
+  <!-- Checklist / Hub elements -->
+  <rect x="124" y="148" width="56" height="56" rx="18" fill="#818CF8" />
+  <path d="M140 176 L150 186 L164 166" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <rect x="204" y="160" width="180" height="14" rx="7" fill="#312E81" fill-opacity="0.8" />
+  <rect x="204" y="184" width="110" height="10" rx="5" fill="#6366F1" fill-opacity="0.4" />
+
+  <rect x="124" y="228" width="56" height="56" rx="18" fill="#34D399" />
+  <path d="M152 244 L152 268 M140 256 L164 256" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" fill="none" />
+  <rect x="204" y="240" width="160" height="14" rx="7" fill="#065F46" fill-opacity="0.8" />
+  <rect x="204" y="264" width="90" height="10" rx="5" fill="#10B981" fill-opacity="0.4" />
+
+  <rect x="124" y="308" width="56" height="56" rx="18" fill="#F472B6" />
+  <circle cx="152" cy="336" r="10" stroke="#FFFFFF" stroke-width="5" fill="none" />
+  <rect x="204" y="320" width="140" height="14" rx="7" fill="#831843" fill-opacity="0.8" />
+  <rect x="204" y="344" width="120" height="10" rx="5" fill="#EC4899" fill-opacity="0.4" />
+</svg>

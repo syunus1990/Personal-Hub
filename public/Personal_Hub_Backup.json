@@ -1,0 +1,1182 @@
+{
+  "backupVersion": 1,
+  "appVersion": "1.0",
+  "createdAt": "2026-10-15T06:50:10.681Z",
+  "dataCollections": {
+    "tasks": [
+      {
+        "id": "task-1791576743400-tjx5",
+        "title": "Car ts10 glass cover",
+        "category": "Car",
+        "priority": "Medium",
+        "status": "In Progress",
+        "completionPercentage": 85,
+        "followUpDate": "2026-10-12",
+        "remarks": "Task created.",
+        "createdDate": "2026-10-09",
+        "lastFollowedUpAt": "2026-10-09T20:12:23.400Z",
+        "history": [
+          {
+            "id": "hist-1791576743400",
+            "date": "2026-10-09",
+            "completionPercentage": 85,
+            "remark": "Task created and added to tracker.",
+            "createdAt": "2026-10-09T20:12:23.400Z"
+          }
+        ]
+      },
+      {
+        "id": "task-1791269374849-6j3x",
+        "title": "Room change",
+        "category": "Personal",
+        "priority": "Medium",
+        "status": "In Progress",
+        "completionPercentage": 0,
+        "followUpDate": "2026-11-15",
+        "remarks": "Task created.",
+        "createdDate": "2026-10-06",
+        "lastFollowedUpAt": "2026-10-07T16:21:06.628Z",
+        "history": [
+          {
+            "id": "hist-1791390066628",
+            "date": "2026-10-07",
+            "completionPercentage": 0,
+            "remark": "Next follow-up changed to 15 Nov 2026.",
+            "createdAt": "2026-10-07T16:21:06.628Z"
+          },
+          {
+            "id": "hist-1791269374849",
+            "date": "2026-10-06",
+            "completionPercentage": 0,
+            "remark": "Task created and added to tracker.",
+            "createdAt": "2026-10-06T06:49:34.849Z"
+          }
+        ]
+      },
+      {
+        "id": "task-1791269353564-ppjo",
+        "title": "Washing machine repair",
+        "category": "Personal",
+        "priority": "Medium",
+        "status": "In Progress",
+        "completionPercentage": 0,
+        "followUpDate": "2026-10-06",
+        "remarks": "Task created.",
+        "createdDate": "2026-10-06",
+        "lastFollowedUpAt": "2026-10-06T06:49:13.563Z",
+        "history": [
+          {
+            "id": "hist-1791269353564",
+            "date": "2026-10-06",
+            "completionPercentage": 0,
+            "remark": "Task created and added to tracker.",
+            "createdAt": "2026-10-06T06:49:13.563Z"
+          }
+        ]
+      },
+      {
+        "id": "task-1791117775412-6cqd",
+        "title": "Car cleaning before installing seat cover",
+        "category": "Car",
+        "priority": "Medium",
+        "status": "In Progress",
+        "completionPercentage": 0,
+        "followUpDate": "2026-10-07",
+        "remarks": "Task created.",
+        "createdDate": "2026-10-04",
+        "lastFollowedUpAt": "2026-10-04T12:42:55.411Z",
+        "history": [
+          {
+            "id": "hist-1791117775412",
+            "date": "2026-10-04",
+            "completionPercentage": 0,
+            "remark": "Task created and added to tracker.",
+            "createdAt": "2026-10-04T12:42:55.411Z"
+          }
+        ]
+      },
+      {
+        "id": "task-1791049116447-3drz",
+        "title": "Mudassir studies or job",
+        "category": "Personal",
+        "priority": "High",
+        "status": "In Progress",
+        "completionPercentage": 0,
+        "followUpDate": "2026-10-06",
+        "remarks": "Task created.",
+        "createdDate": "2026-10-03",
+        "lastFollowedUpAt": "2026-10-04T11:47:34.699Z",
+        "history": [
+          {
+            "id": "hist-1791114454699",
+            "date": "2026-10-04",
+            "completionPercentage": 0,
+            "remark": "Progress updated to 0%.",
+            "createdAt": "2026-10-04T11:47:34.699Z"
+          },
+          {
+            "id": "hist-1791114454665",
+            "date": "2026-10-04",
+            "completionPercentage": 5,
+            "remark": "Progress updated to 5%.",
+            "createdAt": "2026-10-04T11:47:34.665Z"
+          },
+          {
+            "id": "hist-1791114454636",
+            "date": "2026-10-04",
+            "completionPercentage": 15,
+            "remark": "Progress updated to 15%.",
+            "createdAt": "2026-10-04T11:47:34.636Z"
+          },
+          {
+            "id": "hist-1791114454614",
+            "date": "2026-10-04",
+            "completionPercentage": 20,
+            "remark": "Progress updated to 20%.",
+            "createdAt": "2026-10-04T11:47:34.614Z"
+          },
+          {
+            "id": "hist-1791114454602",
+            "date": "2026-10-04",
+            "completionPercentage": 25,
+            "remark": "Progress updated to 25%.",
+            "createdAt": "2026-10-04T11:47:34.602Z"
+          },
+          {
+            "id": "hist-1791114453194",
+            "date": "2026-10-04",
+            "completionPercentage": 30,
+            "remark": "Progress updated to 30%.",
+            "createdAt": "2026-10-04T11:47:33.194Z"
+          },
+          {
+            "id": "hist-1791114453163",
+            "date": "2026-10-04",
+            "completionPercentage": 35,
+            "remark": "Progress updated to 35%.",
+            "createdAt": "2026-10-04T11:47:33.163Z"
+          },
+          {
+            "id": "hist-1791114453127",
+            "date": "2026-10-04",
+            "completionPercentage": 40,
+            "remark": "Progress updated to 40%.",
+            "createdAt": "2026-10-04T11:47:33.127Z"
+          },
+          {
+            "id": "hist-1791114453096",
+            "date": "2026-10-04",
+            "completionPercentage": 45,
+            "remark": "Progress updated to 45%.",
+            "createdAt": "2026-10-04T11:47:33.096Z"
+          },
+          {
+            "id": "hist-1791114453060",
+            "date": "2026-10-04",
+            "completionPercentage": 55,
+            "remark": "Progress updated to 55%.",
+            "createdAt": "2026-10-04T11:47:33.060Z"
+          },
+          {
+            "id": "hist-1791114453026",
+            "date": "2026-10-04",
+            "completionPercentage": 65,
+            "remark": "Progress updated to 65%.",
+            "createdAt": "2026-10-04T11:47:33.026Z"
+          },
+          {
+            "id": "hist-1791114453009",
+            "date": "2026-10-04",
+            "completionPercentage": 70,
+            "remark": "Progress updated to 70%.",
+            "createdAt": "2026-10-04T11:47:33.009Z"
+          },
+          {
+            "id": "hist-1791114452992",
+            "date": "2026-10-04",
+            "completionPercentage": 75,
+            "remark": "Progress updated to 75%.",
+            "createdAt": "2026-10-04T11:47:32.992Z"
+          },
+          {
+            "id": "hist-1791114452975",
+            "date": "2026-10-04",
+            "completionPercentage": 80,
+            "remark": "Progress updated to 80%.",
+            "createdAt": "2026-10-04T11:47:32.975Z"
+          },
+          {
+            "id": "hist-1791049124598",
+            "date": "2026-10-03",
+            "completionPercentage": 85,
+            "remark": "Next follow-up rescheduled to 3 days (6 Oct 2026).",
+            "createdAt": "2026-10-03T17:38:44.598Z"
+          },
+          {
+            "id": "hist-1791049116447",
+            "date": "2026-10-03",
+            "completionPercentage": 85,
+            "remark": "Task created and added to tracker.",
+            "createdAt": "2026-10-03T17:38:36.447Z"
+          }
+        ]
+      },
+      {
+        "id": "task-1791042236479-wv7u",
+        "title": "Car accessories order Ali Express",
+        "category": "Car",
+        "priority": "Low",
+        "status": "In Progress",
+        "completionPercentage": 0,
+        "followUpDate": "2026-10-06",
+        "remarks": "Task created.",
+        "createdDate": "2026-10-03",
+        "lastFollowedUpAt": "2026-10-03T15:43:56.479Z",
+        "history": [
+          {
+            "id": "hist-1791042236479",
+            "date": "2026-10-03",
+            "completionPercentage": 0,
+            "remark": "Task created and added to tracker.",
+            "createdAt": "2026-10-03T15:43:56.479Z"
+          }
+        ]
+      },
+      {
+        "id": "task-1790937103392-wt1f",
+        "title": "Umrah rate",
+        "category": "Personal",
+        "priority": "Medium",
+        "status": "Completed",
+        "completionPercentage": 100,
+        "followUpDate": "2026-10-07",
+        "remarks": "Task created.",
+        "createdDate": "2026-10-02",
+        "lastFollowedUpAt": "2026-10-10T12:25:45.324Z",
+        "history": [
+          {
+            "id": "hist-1791635145324",
+            "date": "2026-10-10",
+            "completionPercentage": 100,
+            "remark": "Progress updated to 100%.",
+            "createdAt": "2026-10-10T12:25:45.324Z"
+          },
+          {
+            "id": "hist-1791635145290",
+            "date": "2026-10-10",
+            "completionPercentage": 95,
+            "remark": "Progress updated to 95%.",
+            "createdAt": "2026-10-10T12:25:45.290Z"
+          },
+          {
+            "id": "hist-1791635145265",
+            "date": "2026-10-10",
+            "completionPercentage": 85,
+            "remark": "Progress updated to 85%.",
+            "createdAt": "2026-10-10T12:25:45.265Z"
+          },
+          {
+            "id": "hist-1791635145250",
+            "date": "2026-10-10",
+            "completionPercentage": 75,
+            "remark": "Progress updated to 75%.",
+            "createdAt": "2026-10-10T12:25:45.250Z"
+          },
+          {
+            "id": "hist-1791635145229",
+            "date": "2026-10-10",
+            "completionPercentage": 65,
+            "remark": "Progress updated to 65%.",
+            "createdAt": "2026-10-10T12:25:45.229Z"
+          },
+          {
+            "id": "hist-1791635145193",
+            "date": "2026-10-10",
+            "completionPercentage": 50,
+            "remark": "Progress updated to 50%.",
+            "createdAt": "2026-10-10T12:25:45.193Z"
+          },
+          {
+            "id": "hist-1791635145158",
+            "date": "2026-10-10",
+            "completionPercentage": 35,
+            "remark": "Progress updated to 35%.",
+            "createdAt": "2026-10-10T12:25:45.158Z"
+          },
+          {
+            "id": "hist-1791635145104",
+            "date": "2026-10-10",
+            "completionPercentage": 15,
+            "remark": "Progress updated to 15%.",
+            "createdAt": "2026-10-10T12:25:45.104Z"
+          },
+          {
+            "id": "hist-1791635145089",
+            "date": "2026-10-10",
+            "completionPercentage": 10,
+            "remark": "Progress updated to 10%.",
+            "createdAt": "2026-10-10T12:25:45.089Z"
+          },
+          {
+            "id": "hist-1791635145071",
+            "date": "2026-10-10",
+            "completionPercentage": 5,
+            "remark": "Progress updated to 5%.",
+            "createdAt": "2026-10-10T12:25:45.071Z"
+          },
+          {
+            "id": "hist-1791114433809",
+            "date": "2026-10-04",
+            "completionPercentage": 0,
+            "remark": "Next follow-up rescheduled to 3 days (7 Oct 2026).",
+            "createdAt": "2026-10-04T11:47:13.809Z"
+          },
+          {
+            "id": "hist-1790937103392",
+            "date": "2026-10-02",
+            "completionPercentage": 0,
+            "remark": "Task created and added to tracker.",
+            "createdAt": "2026-10-02T10:31:43.392Z"
+          }
+        ]
+      },
+      {
+        "id": "task-1790936951887-qhcx",
+        "title": "Car seat cover Quotation",
+        "category": "Car",
+        "priority": "Medium",
+        "status": "In Progress",
+        "completionPercentage": 0,
+        "followUpDate": "2026-10-07",
+        "remarks": "Quotation for indian brand fabro and flooring 500\nSaudi made and flooring 550 with steering gear",
+        "createdDate": "2026-10-02",
+        "lastFollowedUpAt": "2026-10-04T11:47:20.040Z",
+        "history": [
+          {
+            "id": "hist-1791114440040",
+            "date": "2026-10-04",
+            "completionPercentage": 0,
+            "remark": "Next follow-up rescheduled to 3 days (7 Oct 2026).",
+            "createdAt": "2026-10-04T11:47:20.040Z"
+          },
+          {
+            "id": "hist-1790936951887",
+            "date": "2026-10-02",
+            "completionPercentage": 0,
+            "remark": "Quotation for indian brand fabro and flooring 500\nSaudi made and flooring 550 with steering gear",
+            "createdAt": "2026-10-02T10:29:11.887Z"
+          }
+        ]
+      },
+      {
+        "id": "task-1790856374014-1hpo",
+        "title": "Maharashtra bank FATCA",
+        "category": "Finance",
+        "priority": "High",
+        "status": "Completed",
+        "completionPercentage": 100,
+        "followUpDate": "2026-10-01",
+        "remarks": "Send email",
+        "createdDate": "2026-10-01",
+        "lastFollowedUpAt": "2026-10-04T08:09:44.573Z",
+        "history": [
+          {
+            "id": "hist-1791101384574",
+            "date": "2026-10-04",
+            "completionPercentage": 100,
+            "remark": "Marked task as Completed.",
+            "createdAt": "2026-10-04T08:09:44.573Z"
+          },
+          {
+            "id": "hist-1790856374014",
+            "date": "2026-10-01",
+            "completionPercentage": 0,
+            "remark": "Send email",
+            "createdAt": "2026-10-01T12:06:14.014Z"
+          }
+        ]
+      },
+      {
+        "id": "task-2",
+        "title": "Insurance Renew",
+        "category": "Car",
+        "priority": "High",
+        "status": "Completed",
+        "completionPercentage": 100,
+        "followUpDate": "2026-10-08",
+        "remarks": "Car insurance renewed",
+        "createdDate": "2026-09-28",
+        "lastFollowedUpAt": "2026-10-10T12:25:18.854Z",
+        "history": [
+          {
+            "id": "hist-1791635118854",
+            "date": "2026-10-10",
+            "completionPercentage": 100,
+            "remark": "Marked task as Completed.",
+            "createdAt": "2026-10-10T12:25:18.854Z"
+          },
+          {
+            "id": "hist-1791635118137",
+            "date": "2026-10-10",
+            "completionPercentage": 90,
+            "remark": "Reopened task for tracking.",
+            "createdAt": "2026-10-10T12:25:18.137Z"
+          },
+          {
+            "id": "hist-1791635114363",
+            "date": "2026-10-10",
+            "completionPercentage": 100,
+            "remark": "Progress updated to 100%.",
+            "createdAt": "2026-10-10T12:25:14.363Z"
+          },
+          {
+            "id": "hist-1791635114333",
+            "date": "2026-10-10",
+            "completionPercentage": 90,
+            "remark": "Progress updated to 90%.",
+            "createdAt": "2026-10-10T12:25:14.333Z"
+          },
+          {
+            "id": "hist-1791635114320",
+            "date": "2026-10-10",
+            "completionPercentage": 85,
+            "remark": "Progress updated to 85%.",
+            "createdAt": "2026-10-10T12:25:14.320Z"
+          },
+          {
+            "id": "hist-1791635087281",
+            "date": "2026-10-10",
+            "completionPercentage": 80,
+            "remark": "Progress updated to 80%.",
+            "createdAt": "2026-10-10T12:24:47.281Z"
+          },
+          {
+            "id": "hist-1791635080241",
+            "date": "2026-10-10",
+            "completionPercentage": 100,
+            "remark": "Next follow-up changed to 8 Oct 2026.",
+            "createdAt": "2026-10-10T12:24:40.241Z"
+          },
+          {
+            "id": "hist-1791635067846",
+            "date": "2026-10-10",
+            "completionPercentage": 100,
+            "remark": "Progress updated to 100%.",
+            "createdAt": "2026-10-10T12:24:27.846Z"
+          },
+          {
+            "id": "hist-1791635064600",
+            "date": "2026-10-10",
+            "completionPercentage": 0,
+            "remark": "Car insurance renewed",
+            "createdAt": "2026-10-10T12:24:24.600Z"
+          },
+          {
+            "id": "hist-1791114445089",
+            "date": "2026-10-04",
+            "completionPercentage": 0,
+            "remark": "Next follow-up rescheduled to 3 days (7 Oct 2026).",
+            "createdAt": "2026-10-04T11:47:25.089Z"
+          },
+          {
+            "id": "hist-1790855357517",
+            "date": "2026-10-01",
+            "completionPercentage": 0,
+            "remark": "Next follow-up rescheduled to Tomorrow (2 Oct 2026).",
+            "createdAt": "2026-10-01T11:49:17.517Z"
+          },
+          {
+            "id": "hist-1790855356334",
+            "date": "2026-10-01",
+            "completionPercentage": 0,
+            "remark": "Follow-up date moved to Today.",
+            "createdAt": "2026-10-01T11:49:16.334Z"
+          },
+          {
+            "id": "hist-1790855337582",
+            "date": "2026-10-01",
+            "completionPercentage": 0,
+            "remark": "Progress updated to 0%.",
+            "createdAt": "2026-10-01T11:48:57.582Z"
+          },
+          {
+            "id": "hist-1790855337548",
+            "date": "2026-10-01",
+            "completionPercentage": 5,
+            "remark": "Progress updated to 5%.",
+            "createdAt": "2026-10-01T11:48:57.548Z"
+          },
+          {
+            "id": "hist-1790855337533",
+            "date": "2026-10-01",
+            "completionPercentage": 10,
+            "remark": "Progress updated to 10%.",
+            "createdAt": "2026-10-01T11:48:57.533Z"
+          },
+          {
+            "id": "hist-1790855337494",
+            "date": "2026-10-01",
+            "completionPercentage": 15,
+            "remark": "Progress updated to 15%.",
+            "createdAt": "2026-10-01T11:48:57.494Z"
+          },
+          {
+            "id": "hist-1790855337400",
+            "date": "2026-10-01",
+            "completionPercentage": 35,
+            "remark": "Progress updated to 35%.",
+            "createdAt": "2026-10-01T11:48:57.400Z"
+          },
+          {
+            "id": "hist-2-1",
+            "date": "2026-09-30",
+            "completionPercentage": 40,
+            "remark": "Sent medical bills and incident summary to claims adjuster.",
+            "createdAt": "2026-09-30T11:41:56.413Z"
+          },
+          {
+            "id": "hist-2-2",
+            "date": "2026-09-28",
+            "completionPercentage": 15,
+            "remark": "Initiated claim inquiry on portal. Downloaded settlement checklist.",
+            "createdAt": "2026-09-28T11:41:56.413Z"
+          }
+        ]
+      }
+    ],
+    "accounts": [
+      {
+        "id": "acc-1",
+        "name": "SNB",
+        "openingBalance": 8100,
+        "currentBalance": -1.85,
+        "color": "#8b5cf6",
+        "createdAt": "2026-09-01T11:41:56.413Z"
+      },
+      {
+        "id": "acc-2",
+        "name": "D360",
+        "openingBalance": 0,
+        "currentBalance": 0,
+        "color": "#06b6d4",
+        "createdAt": "2026-09-01T11:41:56.413Z"
+      },
+      {
+        "id": "acc-3",
+        "name": "STC",
+        "openingBalance": 1250,
+        "currentBalance": 1038,
+        "color": "#10b981",
+        "createdAt": "2026-09-01T11:41:56.413Z"
+      },
+      {
+        "id": "acc_1790855039108",
+        "name": "Alinma",
+        "openingBalance": 1500,
+        "currentBalance": 435.25,
+        "color": "#8b5cf6",
+        "createdAt": "2026-10-01T11:43:59.108Z"
+      },
+      {
+        "id": "acc_1790951200102",
+        "name": "Tiqmo",
+        "openingBalance": 150,
+        "currentBalance": 150,
+        "color": "#64748b",
+        "createdAt": "2026-10-02T14:26:40.102Z"
+      },
+      {
+        "id": "acc_1791355409897",
+        "name": "CASH",
+        "openingBalance": 0,
+        "currentBalance": 3.5,
+        "color": "#10b981",
+        "createdAt": "2026-10-07T06:43:29.897Z"
+      },
+      {
+        "id": "acc_1791497983529",
+        "name": "Rozzy",
+        "openingBalance": 50,
+        "currentBalance": 0,
+        "color": "#06b6d4",
+        "createdAt": "2026-10-08T22:19:43.529Z"
+      },
+      {
+        "id": "acc_1791498669839",
+        "name": "Isalesawab",
+        "openingBalance": 0,
+        "currentBalance": 97.5,
+        "color": "#3b82f6",
+        "createdAt": "2026-10-08T22:31:09.839Z"
+      }
+    ],
+    "categories": [
+      {
+        "id": "cat-food",
+        "name": "Food",
+        "icon": "Utensils",
+        "order": 1,
+        "color": "#f59e0b"
+      },
+      {
+        "id": "cat-fuel",
+        "name": "Fuel",
+        "icon": "Fuel",
+        "order": 2,
+        "color": "#ef4444"
+      },
+      {
+        "id": "cat-shopping",
+        "name": "Shopping",
+        "icon": "ShoppingBag",
+        "order": 3,
+        "color": "#ec4899"
+      },
+      {
+        "id": "cat-bills",
+        "name": "Bills",
+        "icon": "Receipt",
+        "order": 4,
+        "color": "#6366f1"
+      },
+      {
+        "id": "cat-car",
+        "name": "Car",
+        "icon": "Car",
+        "order": 5,
+        "color": "#3b82f6"
+      },
+      {
+        "id": "cat-family",
+        "name": "Family",
+        "icon": "Users",
+        "order": 6,
+        "color": "#14b8a6"
+      },
+      {
+        "id": "cat-personal",
+        "name": "Personal",
+        "icon": "User",
+        "order": 7,
+        "color": "#8b5cf6"
+      },
+      {
+        "id": "cat-other",
+        "name": "Other",
+        "icon": "Tag",
+        "order": 8,
+        "color": "#64748b"
+      },
+      {
+        "id": "cat_1791355599659",
+        "name": "Car Sub category - Maintenance",
+        "color": "#ef4444",
+        "order": 9
+      },
+      {
+        "id": "cat_1791355642311",
+        "name": "Car Sub category - Cleaning",
+        "color": "#f59e0b",
+        "order": 10
+      },
+      {
+        "id": "cat_1791355658579",
+        "name": "Car Sub category - Fuel",
+        "color": "#6366f1",
+        "order": 11
+      }
+    ],
+    "transactions": [
+      {
+        "type": "Expense",
+        "amount": 4,
+        "accountId": "acc-1",
+        "categoryId": "cat-food",
+        "date": "2026-10-14",
+        "remark": "Water refill",
+        "id": "tx_1792046864468_0ntj",
+        "createdAt": "2026-10-15T06:47:44.468Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 78,
+        "accountId": "acc-1",
+        "categoryId": "cat-food",
+        "date": "2026-10-13",
+        "remark": "Mutton",
+        "id": "tx_1791922105975_fiiv",
+        "createdAt": "2026-10-13T20:08:25.975Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 10,
+        "accountId": "acc_1791355409897",
+        "categoryId": "cat-food",
+        "date": "2026-10-13",
+        "remark": "Juice",
+        "id": "tx_1792046973707_pngu",
+        "createdAt": "2026-10-15T06:49:33.707Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 23.45,
+        "accountId": "acc-1",
+        "categoryId": "cat-personal",
+        "date": "2026-10-12",
+        "remark": "Medicine",
+        "id": "tx_1792046831363_1twy",
+        "createdAt": "2026-10-15T06:47:11.363Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 94.75,
+        "accountId": "acc_1790855039108",
+        "categoryId": "cat-bills",
+        "date": "2026-10-11",
+        "remark": "Recharge STC",
+        "id": "tx_1791816514337_yom3",
+        "createdAt": "2026-10-12T14:48:34.337Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 169.5,
+        "accountId": "acc_1791497983529",
+        "categoryId": "cat-shopping",
+        "date": "2026-10-11",
+        "remark": "Lulu grocery and acer keyboard mouse",
+        "id": "tx_1791815477939_me4n",
+        "createdAt": "2026-10-12T14:31:17.939Z"
+      },
+      {
+        "type": "Money Added",
+        "amount": 169.5,
+        "accountId": "acc_1791497983529",
+        "date": "2026-10-11",
+        "remark": "Available cash",
+        "id": "tx_1791815437399_7jvc",
+        "createdAt": "2026-10-12T14:30:37.399Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 103,
+        "accountId": "acc-3",
+        "categoryId": "cat_1791355658579",
+        "date": "2026-10-09",
+        "remark": "Fuel",
+        "id": "tx_1791580690304_lmt2",
+        "createdAt": "2026-10-09T21:18:10.304Z"
+      },
+      {
+        "type": "Transfer",
+        "amount": 42.5,
+        "accountId": "acc-1",
+        "toAccountId": "acc_1791355409897",
+        "date": "2026-10-09",
+        "remark": "Atm withdraw",
+        "id": "tx_1791579367910_35lp",
+        "createdAt": "2026-10-09T20:56:07.910Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 4,
+        "accountId": "acc_1791355409897",
+        "categoryId": "cat-food",
+        "date": "2026-10-09",
+        "remark": "Water refill",
+        "id": "tx_1791579175748_avho",
+        "createdAt": "2026-10-09T20:52:55.748Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 40,
+        "accountId": "acc_1791498669839",
+        "categoryId": "cat-family",
+        "date": "2026-10-09",
+        "remark": "Water",
+        "id": "tx_1791579128510_f2y6",
+        "createdAt": "2026-10-09T20:52:08.510Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 13.5,
+        "accountId": "acc-1",
+        "categoryId": "cat-food",
+        "date": "2026-10-09",
+        "remark": "Al baik",
+        "id": "tx_1791578825248_2wrm",
+        "createdAt": "2026-10-09T20:47:05.248Z"
+      },
+      {
+        "type": "Money Added",
+        "amount": 1500,
+        "accountId": "acc_1791497983529",
+        "date": "2026-10-09",
+        "remark": "Added funds",
+        "id": "tx_1791499222079_y4rb",
+        "createdAt": "2026-10-08T22:40:22.079Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 280,
+        "accountId": "acc_1790855039108",
+        "categoryId": "cat_1791355599659",
+        "date": "2026-10-09",
+        "remark": "Battery Installation",
+        "id": "tx_1791498399356_2dsq",
+        "createdAt": "2026-10-08T22:26:39.356Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 5,
+        "accountId": "acc_1791355409897",
+        "categoryId": "cat-food",
+        "date": "2026-10-08",
+        "remark": "Papaya juice",
+        "id": "tx_1791567992145_7gk3",
+        "createdAt": "2026-10-09T17:46:32.145Z"
+      },
+      {
+        "type": "Transfer",
+        "amount": 137.5,
+        "accountId": "acc-1",
+        "toAccountId": "acc_1791498669839",
+        "date": "2026-10-08",
+        "remark": "Isalesawab Money",
+        "id": "tx_1791498728041_ip4c",
+        "createdAt": "2026-10-08T22:32:08.041Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 4,
+        "accountId": "acc_1791355409897",
+        "categoryId": "cat-food",
+        "date": "2026-10-08",
+        "remark": "Rice bhukhari",
+        "id": "tx_1791498591041_jnt8",
+        "createdAt": "2026-10-08T22:29:51.041Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 24.4,
+        "accountId": "acc-1",
+        "categoryId": "cat-personal",
+        "date": "2026-10-08",
+        "remark": "Medicine duphalac",
+        "id": "tx_1791498530035_dohd",
+        "createdAt": "2026-10-08T22:28:50.035Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 74.75,
+        "accountId": "acc-1",
+        "categoryId": "cat-shopping",
+        "date": "2026-10-08",
+        "remark": "Khamza market",
+        "id": "tx_1791498494025_gcvq",
+        "createdAt": "2026-10-08T22:28:14.025Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 690,
+        "accountId": "acc_1790855039108",
+        "categoryId": "cat-car",
+        "date": "2026-10-08",
+        "remark": "Car Insurance",
+        "id": "tx_1791498453639_60fv",
+        "createdAt": "2026-10-08T22:27:33.639Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 16,
+        "accountId": "acc-1",
+        "categoryId": "cat-food",
+        "date": "2026-10-07",
+        "remark": "Barns coffee",
+        "id": "tx_1791561201922_vmyl",
+        "createdAt": "2026-10-09T15:53:21.922Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 69,
+        "accountId": "acc-1",
+        "categoryId": "cat-shopping",
+        "date": "2026-10-07",
+        "remark": "Abaya",
+        "id": "tx_1791561183197_xv1z",
+        "createdAt": "2026-10-09T15:53:03.197Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 50,
+        "accountId": "acc_1791497983529",
+        "categoryId": "cat_1791355642311",
+        "date": "2026-10-07",
+        "remark": "Car cleaning monthly",
+        "id": "tx_1791355493264_h3w3",
+        "createdAt": "2026-10-07T06:44:53.264Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 1,
+        "accountId": "acc_1791355409897",
+        "categoryId": "cat-food",
+        "date": "2026-10-06",
+        "remark": "Khubz",
+        "id": "tx_1791355463885_xei6",
+        "createdAt": "2026-10-07T06:44:23.885Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 15,
+        "accountId": "acc_1791355409897",
+        "categoryId": "cat-food",
+        "date": "2026-10-06",
+        "remark": "Juice",
+        "id": "tx_1791355432931_kjxv",
+        "createdAt": "2026-10-07T06:43:52.931Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 48,
+        "accountId": "acc-1",
+        "categoryId": "cat-food",
+        "date": "2026-10-05",
+        "remark": "Umar visit and food",
+        "id": "tx_1791236242826_mf40",
+        "createdAt": "2026-10-05T21:37:22.826Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 58,
+        "accountId": "acc-1",
+        "categoryId": "cat-food",
+        "date": "2026-10-05",
+        "remark": "Umar Home",
+        "id": "tx_1791204198676_0l04",
+        "createdAt": "2026-10-05T12:43:18.676Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 21.87,
+        "accountId": "acc-1",
+        "categoryId": "cat-personal",
+        "date": "2026-10-04",
+        "remark": "Hand gloves",
+        "id": "tx_1791189561163_im4k",
+        "createdAt": "2026-10-05T08:39:21.163Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 73,
+        "accountId": "acc-1",
+        "categoryId": "cat-food",
+        "date": "2026-10-04",
+        "remark": "1947 indian kitchen",
+        "id": "tx_1791062097156_ej61",
+        "createdAt": "2026-10-03T21:14:57.156Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 216.88,
+        "accountId": "acc-1",
+        "categoryId": "cat-shopping",
+        "date": "2026-10-04",
+        "remark": "Purse and Socks",
+        "id": "tx_1791062064696_l5ir",
+        "createdAt": "2026-10-03T21:14:24.696Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 2,
+        "accountId": "acc-1",
+        "categoryId": "cat-food",
+        "date": "2026-10-02",
+        "remark": "Tea",
+        "id": "tx_1790957398394_83oo",
+        "createdAt": "2026-10-02T16:09:58.394Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 31,
+        "accountId": "acc-1",
+        "categoryId": "cat-food",
+        "date": "2026-10-02",
+        "remark": "Grove breakfast",
+        "id": "tx_1790937271192_3u56",
+        "createdAt": "2026-10-02T10:34:31.192Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 500,
+        "accountId": "acc-1",
+        "categoryId": "cat-personal",
+        "date": "2026-10-01",
+        "remark": "Investment",
+        "id": "tx_1790896790098_jqtz",
+        "createdAt": "2026-10-01T23:19:50.098Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 5405,
+        "accountId": "acc-1",
+        "categoryId": "cat-personal",
+        "date": "2026-10-01",
+        "remark": "Rent, groceries, rozzy pocket money, saving",
+        "id": "tx_1790893691410_3sls",
+        "createdAt": "2026-10-01T22:28:11.410Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 175,
+        "accountId": "acc-1",
+        "categoryId": "cat-shopping",
+        "date": "2026-10-01",
+        "remark": "Silver Ring",
+        "id": "tx_1790893437316_gitw",
+        "createdAt": "2026-10-01T22:23:57.316Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 13,
+        "accountId": "acc-1",
+        "categoryId": "cat-food",
+        "date": "2026-10-01",
+        "remark": "Mall of Arabia Food",
+        "id": "tx_1790893412710_u87k",
+        "createdAt": "2026-10-01T22:23:32.710Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 17.5,
+        "accountId": "acc-1",
+        "categoryId": "cat-bills",
+        "date": "2026-10-01",
+        "remark": "Mobily Recharge",
+        "id": "tx_1790893365953_jzam",
+        "createdAt": "2026-10-01T22:22:45.953Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 1057.5,
+        "accountId": "acc-1",
+        "categoryId": "cat-family",
+        "date": "2026-09-30",
+        "remark": "Home 800, Mummy 120, Sadaqa 137.5",
+        "id": "tx_1790855565538_a5q9",
+        "createdAt": "2026-10-01T11:52:45.538Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 109,
+        "accountId": "acc-3",
+        "categoryId": "cat_1791355658579",
+        "date": "2026-09-30",
+        "remark": "Petrol",
+        "id": "tx_1790855511019_kxvt",
+        "createdAt": "2026-10-01T11:51:51.019Z"
+      },
+      {
+        "type": "Expense",
+        "amount": 1500,
+        "accountId": "acc_1791497983529",
+        "categoryId": "cat_1791355599659",
+        "date": "2026-08-18",
+        "remark": "Gear box Maintenance, oil change, Fuel injector",
+        "id": "tx_1791499573771_0k85",
+        "createdAt": "2026-10-08T22:46:13.771Z"
+      }
+    ],
+    "notes": [
+      {
+        "title": "Bugs tweaks",
+        "content": "Log entry not able to adit\nAi integration",
+        "createdDate": "2026-10-07",
+        "modifiedDate": "2026-10-09",
+        "createdAt": "2026-10-07T16:20:08.008Z",
+        "updatedAt": "2026-10-09T21:19:45.845Z",
+        "id": "note_1791390008008"
+      },
+      {
+        "title": "Items to buy",
+        "content": "1. Booster cable \n2. Torque wrench\n3. Electric car jack\n4. Water cooler\n5. Ugreen K331 MK006 LP669 4000 DPI mouse",
+        "tags": [
+          "Car"
+        ],
+        "createdDate": "2026-10-04",
+        "modifiedDate": "2026-10-05",
+        "createdAt": "2026-10-04T11:51:40.376Z",
+        "updatedAt": "2026-10-05T09:21:22.813Z",
+        "id": "note_1791114700376"
+      }
+    ],
+    "loans": [
+      {
+        "name": "Haris",
+        "originalCurrency": "INR",
+        "originalAmount": 100000,
+        "startDate": "2026-10-01",
+        "lenderName": "Haris",
+        "remark": "For increase investment",
+        "id": "loan_1790855268078_t4p",
+        "createdAt": "2026-10-01T11:47:48.078Z"
+      },
+      {
+        "id": "loan-1",
+        "name": "India Personal Loan",
+        "originalCurrency": "INR",
+        "originalAmount": 100000,
+        "startDate": "2026-01-10",
+        "lenderName": "Shahid Mamu",
+        "remark": "Opening for Shop",
+        "createdAt": "2026-08-02T11:41:56.413Z"
+      }
+    ],
+    "loanPayments": [
+      {
+        "id": "lp-3",
+        "loanId": "loan-2",
+        "amount": 4000,
+        "currency": "SAR",
+        "exchangeRateUsed": 1,
+        "date": "2026-10-01",
+        "paidBy": "Me",
+        "accountId": "acc-1",
+        "remark": "Monthly principal reduction payment",
+        "createdAt": "2026-09-30T23:13:38.355Z"
+      }
+    ],
+    "contributors": [
+      {
+        "id": "contrib-1",
+        "name": "Me",
+        "isDefault": true
+      },
+      {
+        "id": "contrib-2",
+        "name": "Brother"
+      },
+      {
+        "id": "contrib-3",
+        "name": "Father"
+      },
+      {
+        "id": "contrib-4",
+        "name": "Friend"
+      },
+      {
+        "id": "contrib-5",
+        "name": "Company"
+      },
+      {
+        "id": "contrib-6",
+        "name": "Other"
+      }
+    ],
+    "exchangeRate": {
+      "rateInrToSar": 0.038911,
+      "rateSarToInr": 25.7,
+      "lastUpdated": "2026-10-15T06:50:02.485Z",
+      "source": "Live Exchange API (open.er-api.com)"
+    }
+  }
+}
