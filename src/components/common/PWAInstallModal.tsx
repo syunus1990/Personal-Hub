@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import QRCode from 'qrcode';
 import {
   Smartphone,
   Download,
@@ -8,6 +9,7 @@ import {
   ExternalLink,
   Layers,
   Cpu,
+  QrCode,
 } from 'lucide-react';
 import { usePWAInstall } from '../../hooks/usePWAInstall';
 import { useApp } from '../../context/AppContext';
@@ -15,6 +17,27 @@ import { useApp } from '../../context/AppContext';
 export const PWAInstallModal: React.FC = () => {
   const { isPwaGuideOpen, setIsPwaGuideOpen } = useApp();
   const { isInstallable, isInstalled, isIOS, install } = usePWAInstall();
+  const qrCanvasRef = useRef<HTMLCanvasElement | null>(null);
+
+  useEffect(() => {
+    if (!isPwaGuideOpen || !qrCanvasRef.current) return;
+    const url = window.location.href;
+    QRCode.toCanvas(
+      qrCanvasRef.current,
+      url,
+      {
+        width: 140,
+        margin: 1.5,
+        color: {
+          dark: '#1e1b4b',
+          light: '#ffffff',
+        },
+      },
+      (error) => {
+        if (error) console.error('Failed to generate QR code for PWA guide:', error);
+      }
+    );
+  }, [isPwaGuideOpen]);
 
   if (!isPwaGuideOpen) return null;
 
@@ -110,6 +133,20 @@ export const PWAInstallModal: React.FC = () => {
               <span>App is currently running in installed standalone mode!</span>
             </div>
           )}
+
+          {/* Scan from PC to open on Phone */}
+          <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 flex flex-col items-center text-center space-y-2">
+            <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-800 dark:text-slate-200">
+              <QrCode className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" />
+              <span>Viewing on PC? Scan with Phone to Open & Install</span>
+            </div>
+            <p className="text-[11px] text-slate-500 dark:text-slate-400 max-w-xs">
+              Point your phone's camera (iPhone Camera or Android Google Lens) at this code to open the app directly on your phone.
+            </p>
+            <div className="p-2 bg-white rounded-xl shadow-xs border border-slate-200 dark:border-slate-700">
+              <canvas ref={qrCanvasRef} className="rounded-lg" />
+            </div>
+          </div>
 
           {/* Android WebAPK / APK Builder Instructions */}
           <div className="space-y-2">
