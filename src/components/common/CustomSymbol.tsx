@@ -13,13 +13,6 @@ import {
   ArrowUpRight,
   ArrowDownLeft,
   ArrowRightLeft,
-  Gem,
-  Flame,
-  Zap,
-  ShieldCheck,
-  Scale,
-  Target,
-  Compass,
 } from 'lucide-react';
 
 interface CategorySymbolProps {
@@ -61,60 +54,60 @@ export const CategorySymbol: React.FC<CategorySymbolProps> = ({
 
   // Determine creative badge icon and aesthetic gradient
   let IconComponent = Tag;
-  let bgGradient = 'from-slate-400/20 to-slate-500/30 text-slate-700 dark:text-slate-300';
+  let bgGradient = 'from-slate-100 to-slate-200 text-slate-700 dark:from-slate-800 dark:to-slate-700 dark:text-slate-300 border-slate-200/80 dark:border-slate-700/60';
   let glyphEmblem = '✦';
 
   if (catLower.includes('car')) {
     if (subLower.includes('fuel')) {
       IconComponent = Fuel;
-      bgGradient = 'from-blue-500/20 via-cyan-500/20 to-indigo-500/30 text-blue-600 dark:text-blue-400';
+      bgGradient = 'from-blue-500/15 via-cyan-500/15 to-indigo-500/20 text-blue-600 dark:text-blue-400 border-blue-200/80 dark:border-blue-800/40';
       glyphEmblem = '⚡';
     } else if (subLower.includes('maintenance')) {
       IconComponent = Wrench;
-      bgGradient = 'from-amber-500/20 via-orange-500/20 to-rose-500/30 text-amber-600 dark:text-amber-400';
+      bgGradient = 'from-amber-500/15 via-orange-500/15 to-rose-500/20 text-amber-600 dark:text-amber-400 border-amber-200/80 dark:border-amber-800/40';
       glyphEmblem = '⚙';
     } else if (subLower.includes('cleaning')) {
       IconComponent = Sparkles;
-      bgGradient = 'from-teal-400/20 via-sky-400/20 to-indigo-400/30 text-teal-600 dark:text-teal-400';
+      bgGradient = 'from-teal-400/15 via-sky-400/15 to-indigo-400/20 text-teal-600 dark:text-teal-400 border-teal-200/80 dark:border-teal-800/40';
       glyphEmblem = '✨';
     } else {
       IconComponent = CarFront;
-      bgGradient = 'from-blue-500/20 via-indigo-500/20 to-purple-500/30 text-blue-600 dark:text-blue-400';
+      bgGradient = 'from-blue-500/15 via-indigo-500/15 to-purple-500/20 text-blue-600 dark:text-blue-400 border-blue-200/80 dark:border-blue-800/40';
       glyphEmblem = '🚘';
     }
   } else if (catLower.includes('food')) {
     IconComponent = UtensilsCrossed;
-    bgGradient = 'from-amber-500/20 via-yellow-500/20 to-orange-500/30 text-amber-600 dark:text-amber-400';
+    bgGradient = 'from-amber-500/15 via-yellow-500/15 to-orange-500/20 text-amber-600 dark:text-amber-400 border-amber-200/80 dark:border-amber-800/40';
     glyphEmblem = '🍽';
   } else if (catLower.includes('fuel')) {
     IconComponent = Fuel;
-    bgGradient = 'from-red-500/20 via-rose-500/20 to-pink-500/30 text-red-600 dark:text-red-400';
+    bgGradient = 'from-rose-500/15 via-red-500/15 to-pink-500/20 text-red-600 dark:text-red-400 border-rose-200/80 dark:border-rose-800/40';
     glyphEmblem = '⛽';
   } else if (catLower.includes('shopping')) {
     IconComponent = ShoppingBag;
-    bgGradient = 'from-pink-500/20 via-rose-500/20 to-purple-500/30 text-pink-600 dark:text-pink-400';
+    bgGradient = 'from-pink-500/15 via-rose-500/15 to-purple-500/20 text-pink-600 dark:text-pink-400 border-pink-200/80 dark:border-pink-800/40';
     glyphEmblem = '🛍';
   } else if (catLower.includes('bills')) {
     IconComponent = Receipt;
-    bgGradient = 'from-indigo-500/20 via-purple-500/20 to-blue-500/30 text-indigo-600 dark:text-indigo-400';
+    bgGradient = 'from-indigo-500/15 via-purple-500/15 to-blue-500/20 text-indigo-600 dark:text-indigo-400 border-indigo-200/80 dark:border-indigo-800/40';
     glyphEmblem = '⚡';
   } else if (catLower.includes('family')) {
     IconComponent = Heart;
-    bgGradient = 'from-emerald-500/20 via-teal-500/20 to-cyan-500/30 text-emerald-600 dark:text-emerald-400';
+    bgGradient = 'from-emerald-500/15 via-teal-500/15 to-cyan-500/20 text-emerald-600 dark:text-emerald-400 border-emerald-200/80 dark:border-emerald-800/40';
     glyphEmblem = '🤍';
   } else if (catLower.includes('personal')) {
     IconComponent = Fingerprint;
-    bgGradient = 'from-purple-500/20 via-violet-500/20 to-fuchsia-500/30 text-purple-600 dark:text-purple-400';
+    bgGradient = 'from-purple-500/15 via-violet-500/15 to-fuchsia-500/20 text-purple-600 dark:text-purple-400 border-purple-200/80 dark:border-purple-800/40';
     glyphEmblem = '✦';
   } else if (catLower.includes('transfer')) {
     IconComponent = ArrowRightLeft;
-    bgGradient = 'from-cyan-500/20 via-blue-500/20 to-indigo-500/30 text-cyan-600 dark:text-cyan-400';
+    bgGradient = 'from-cyan-500/15 via-blue-500/15 to-indigo-500/20 text-cyan-600 dark:text-cyan-400 border-cyan-200/80 dark:border-cyan-800/40';
     glyphEmblem = '⇄';
   }
 
   return (
     <div
-      className={`relative rounded-2xl bg-gradient-to-tr ${bgGradient} flex items-center justify-center shrink-0 shadow-2xs backdrop-blur-xs border border-white/50 dark:border-white/10 ${sizeClasses[size]} ${className}`}
+      className={`relative rounded-2xl bg-gradient-to-tr ${bgGradient} border flex items-center justify-center shrink-0 shadow-2xs backdrop-blur-xs ${sizeClasses[size]} ${className}`}
       style={color ? { color } : undefined}
       title={`${category}${subCategory ? ` › ${subCategory}` : ''}`}
     >
@@ -149,7 +142,7 @@ export const TransactionTypeSymbol: React.FC<{
   if (type === 'income') {
     return (
       <div
-        className={`${containerClasses[size]} bg-gradient-to-tr from-emerald-500/20 to-teal-400/30 text-emerald-600 dark:text-emerald-400 border border-emerald-400/30 flex items-center justify-center shrink-0 relative`}
+        className={`${containerClasses[size]} bg-gradient-to-tr from-emerald-500/15 to-teal-400/25 text-emerald-600 dark:text-emerald-400 border border-emerald-300/60 dark:border-emerald-500/30 flex items-center justify-center shrink-0 relative`}
       >
         <ArrowDownLeft className={iconClasses[size]} />
         <span className="absolute -bottom-0.5 -right-0.5 text-[8px] font-bold text-emerald-500">
@@ -162,7 +155,7 @@ export const TransactionTypeSymbol: React.FC<{
   if (type === 'expense') {
     return (
       <div
-        className={`${containerClasses[size]} bg-gradient-to-tr from-rose-500/20 to-pink-400/30 text-rose-600 dark:text-rose-400 border border-rose-400/30 flex items-center justify-center shrink-0 relative`}
+        className={`${containerClasses[size]} bg-gradient-to-tr from-rose-500/15 to-pink-400/25 text-rose-600 dark:text-rose-400 border border-rose-300/60 dark:border-rose-500/30 flex items-center justify-center shrink-0 relative`}
       >
         <ArrowUpRight className={iconClasses[size]} />
         <span className="absolute -top-0.5 -right-0.5 text-[8px] font-bold text-rose-500">
@@ -174,7 +167,7 @@ export const TransactionTypeSymbol: React.FC<{
 
   return (
     <div
-      className={`${containerClasses[size]} bg-gradient-to-tr from-cyan-500/20 to-blue-400/30 text-cyan-600 dark:text-cyan-400 border border-cyan-400/30 flex items-center justify-center shrink-0 relative`}
+      className={`${containerClasses[size]} bg-gradient-to-tr from-cyan-500/15 to-blue-400/25 text-cyan-600 dark:text-cyan-400 border border-cyan-300/60 dark:border-cyan-500/30 flex items-center justify-center shrink-0 relative`}
     >
       <ArrowRightLeft className={iconClasses[size]} />
       <span className="absolute -top-0.5 -right-0.5 text-[8px] font-bold text-cyan-500">

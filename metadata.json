@@ -1,6 +1,6 @@
 {
   "name": "Personal Hub",
-  "description": "Listok-styled Personal Hub mobile app with Money, Notes, Follow-ups, Wishlists, and Loans.",
+  "description": "Comprehensive Personal Hub mobile web app with Money, Notes, Follow-ups, Wishlists, and Loans.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

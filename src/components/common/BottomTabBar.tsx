@@ -21,31 +21,31 @@ const TABS: TabItem[] = [
     id: 'dashboard',
     label: 'Home',
     icon: LayoutGrid,
-    accentColor: 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/50',
+    accentColor: 'text-indigo-600 dark:text-indigo-400 bg-indigo-50/90 dark:bg-indigo-950/50 border border-indigo-200/60 dark:border-indigo-800/40',
   },
   {
     id: 'money',
     label: 'Money',
     icon: Wallet,
-    accentColor: 'text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50',
+    accentColor: 'text-emerald-600 dark:text-emerald-400 bg-emerald-50/90 dark:bg-emerald-950/50 border border-emerald-200/60 dark:border-emerald-800/40',
   },
   {
     id: 'notes',
     label: 'Notes',
     icon: FileText,
-    accentColor: 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/50',
+    accentColor: 'text-purple-600 dark:text-purple-400 bg-purple-50/90 dark:bg-purple-950/50 border border-purple-200/60 dark:border-purple-800/40',
   },
   {
     id: 'followups',
     label: 'Follow-ups',
     icon: CheckSquare,
-    accentColor: 'text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-950/50',
+    accentColor: 'text-rose-600 dark:text-rose-400 bg-rose-50/90 dark:bg-rose-950/50 border border-rose-200/60 dark:border-rose-800/40',
   },
   {
     id: 'wishlists',
     label: 'Wishlists',
     icon: Gift,
-    accentColor: 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/50',
+    accentColor: 'text-amber-600 dark:text-amber-400 bg-amber-50/90 dark:bg-amber-950/50 border border-amber-200/60 dark:border-amber-800/40',
   },
 ];
 
@@ -59,7 +59,7 @@ export const BottomTabBar: React.FC = () => {
       aria-label="Bottom Navigation"
     >
       <div className="max-w-md mx-auto px-4 pb-3 pointer-events-auto">
-        <div className="glass-panel rounded-3xl p-1.5 shadow-lg shadow-black/5 dark:shadow-black/20 flex items-center justify-between border border-white/60 dark:border-white/10">
+        <div className="bg-white/95 dark:bg-[#121926]/95 backdrop-blur-md rounded-3xl p-1.5 shadow-xl shadow-slate-900/10 dark:shadow-black/40 flex items-center justify-between border border-slate-200/95 dark:border-white/10">
           {TABS.map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
@@ -76,8 +76,8 @@ export const BottomTabBar: React.FC = () => {
                 onClick={() => setActiveTab(tab.id)}
                 className={`relative flex flex-col items-center justify-center flex-1 py-1.5 px-2 rounded-2xl transition-all duration-200 min-h-[48px] ${
                   isActive
-                    ? `${tab.accentColor} font-semibold shadow-xs`
-                    : 'text-slate-400 hover:text-slate-600 dark:text-slate-500 dark:hover:text-slate-300'
+                    ? `${tab.accentColor} font-bold shadow-xs`
+                    : 'text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200'
                 }`}
                 aria-selected={isActive}
                 role="tab"
@@ -98,7 +98,7 @@ export const BottomTabBar: React.FC = () => {
                     </span>
                   )}
                 </div>
-                <span className="text-[10px] tracking-tight mt-0.5 whitespace-nowrap">
+                <span className="text-[10px] tracking-tight mt-0.5 whitespace-nowrap font-medium">
                   {tab.label}
                 </span>
                 {isActive && (

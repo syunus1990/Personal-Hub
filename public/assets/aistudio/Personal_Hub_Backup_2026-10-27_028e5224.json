@@ -1,0 +1,1000 @@
+{
+  "backupVersion": 1,
+  "appVersion": "2.5",
+  "createdAt": "2026-10-27T10:24:42.605Z",
+  "dataCollections": {
+    "tasks": [
+      {
+        "id": "task-1791576743400-tjx5",
+        "title": "Car ts10 glass cover",
+        "category": "Car",
+        "priority": "Medium",
+        "status": "In Progress",
+        "completionPercentage": 0,
+        "followUpDate": "2026-10-12",
+        "remarks": "Task created. (Progress: 85%)",
+        "createdDate": "2026-10-09",
+        "lastFollowedUpAt": "2026-10-09T20:12:23.400Z"
+      },
+      {
+        "id": "task-1791269374849-6j3x",
+        "title": "Room change",
+        "category": "Personal",
+        "priority": "Medium",
+        "status": "In Progress",
+        "completionPercentage": 0,
+        "followUpDate": "2026-11-15",
+        "remarks": "Next follow-up changed to 15 Nov 2026. (Progress: 0%)",
+        "createdDate": "2026-10-06",
+        "lastFollowedUpAt": "2026-10-06T06:49:34.849Z"
+      },
+      {
+        "id": "task-1791269353564-ppjo",
+        "title": "Washing machine repair",
+        "category": "Personal",
+        "priority": "Medium",
+        "status": "Completed",
+        "completionPercentage": 100,
+        "followUpDate": "2026-10-27",
+        "remarks": "Task created. (Progress: 0%)",
+        "createdDate": "2026-10-06",
+        "lastFollowedUpAt": "2026-10-27T08:42:00.527Z"
+      },
+      {
+        "id": "task-1791117775412-6cqd",
+        "title": "Car cleaning before installing seat cover",
+        "category": "Car",
+        "priority": "Medium",
+        "status": "In Progress",
+        "completionPercentage": 0,
+        "followUpDate": "2026-10-07",
+        "remarks": "Task created. (Progress: 0%)",
+        "createdDate": "2026-10-04",
+        "lastFollowedUpAt": "2026-10-04T12:42:55.411Z"
+      },
+      {
+        "id": "task-1791049116447-3drz",
+        "title": "Mudassir studies or job",
+        "category": "Personal",
+        "priority": "High",
+        "status": "In Progress",
+        "completionPercentage": 0,
+        "followUpDate": "2026-10-06",
+        "remarks": "Next follow-up rescheduled to 3 days (6 Oct 2026). (Progress: 0%)",
+        "createdDate": "2026-10-03",
+        "lastFollowedUpAt": "2026-10-03T17:38:36.447Z"
+      },
+      {
+        "id": "task-1791042236479-wv7u",
+        "title": "Car accessories order Ali Express",
+        "category": "Car",
+        "priority": "Low",
+        "status": "In Progress",
+        "completionPercentage": 0,
+        "followUpDate": "2026-10-06",
+        "remarks": "Task created. (Progress: 0%)",
+        "createdDate": "2026-10-03",
+        "lastFollowedUpAt": "2026-10-03T15:43:56.479Z"
+      },
+      {
+        "id": "task-1790937103392-wt1f",
+        "title": "Umrah rate",
+        "category": "Personal",
+        "priority": "Medium",
+        "status": "Completed",
+        "completionPercentage": 100,
+        "followUpDate": "2026-10-07",
+        "remarks": "Progress updated to 100%. Task completed.",
+        "createdDate": "2026-10-02",
+        "lastFollowedUpAt": "2026-10-10T12:25:45.324Z"
+      },
+      {
+        "id": "task-1790936951887-qhcx",
+        "title": "Car seat cover Quotation",
+        "category": "Car",
+        "priority": "Medium",
+        "status": "In Progress",
+        "completionPercentage": 0,
+        "followUpDate": "2026-10-07",
+        "remarks": "Quotation for indian brand fabro and flooring 500\nSaudi made and flooring 550 with steering gear",
+        "createdDate": "2026-10-02",
+        "lastFollowedUpAt": "2026-10-02T10:29:11.887Z"
+      },
+      {
+        "id": "task-1790856374014-1hpo",
+        "title": "Maharashtra bank FATCA",
+        "category": "Finance",
+        "priority": "High",
+        "status": "Completed",
+        "completionPercentage": 100,
+        "followUpDate": "2026-10-01",
+        "remarks": "Send email. Marked task as Completed.",
+        "createdDate": "2026-10-01",
+        "lastFollowedUpAt": "2026-10-04T08:09:44.573Z"
+      },
+      {
+        "id": "task-2",
+        "title": "Insurance Renew",
+        "category": "Car",
+        "priority": "High",
+        "status": "Completed",
+        "completionPercentage": 100,
+        "followUpDate": "2026-10-08",
+        "remarks": "Car insurance renewed. Marked task as Completed.",
+        "createdDate": "2026-09-28",
+        "lastFollowedUpAt": "2026-10-10T12:25:18.854Z"
+      }
+    ],
+    "accounts": [
+      {
+        "id": "acc-1",
+        "name": "SNB",
+        "openingBalance": 8100,
+        "currentBalance": -738.03,
+        "color": "#8b5cf6",
+        "createdAt": "2026-10-27T09:03:09.522Z"
+      },
+      {
+        "id": "acc-2",
+        "name": "D360",
+        "openingBalance": 0,
+        "currentBalance": 0,
+        "color": "#06b6d4",
+        "createdAt": "2026-10-27T09:03:09.522Z"
+      },
+      {
+        "id": "acc-3",
+        "name": "STC",
+        "openingBalance": 1250,
+        "currentBalance": 933,
+        "color": "#10b981",
+        "createdAt": "2026-10-27T09:03:09.522Z"
+      },
+      {
+        "id": "acc_1790855039108",
+        "name": "Alinma",
+        "openingBalance": 1500,
+        "currentBalance": 430.25,
+        "color": "#8b5cf6",
+        "createdAt": "2026-10-27T09:03:09.522Z"
+      },
+      {
+        "id": "acc_1790951200102",
+        "name": "Tiqmo",
+        "openingBalance": 231.37,
+        "currentBalance": 1,
+        "color": "#64748b",
+        "createdAt": "2026-10-27T09:03:09.522Z"
+      },
+      {
+        "id": "acc_1791355409897",
+        "name": "CASH",
+        "openingBalance": 0,
+        "currentBalance": 3.5,
+        "color": "#10b981",
+        "createdAt": "2026-10-27T09:03:09.522Z"
+      },
+      {
+        "id": "acc_1791497983529",
+        "name": "Rozzy",
+        "openingBalance": 203,
+        "currentBalance": 0,
+        "color": "#06b6d4",
+        "createdAt": "2026-10-27T09:03:09.522Z"
+      },
+      {
+        "id": "acc_1791498669839",
+        "name": "Isalesawab",
+        "openingBalance": 0,
+        "currentBalance": 72.5,
+        "color": "#3b82f6",
+        "createdAt": "2026-10-27T09:03:09.522Z"
+      }
+    ],
+    "categories": [
+      {
+        "id": "cat-car",
+        "name": "Car",
+        "icon": "CarFront",
+        "order": 1,
+        "color": "#3b82f6"
+      },
+      {
+        "id": "cat-food",
+        "name": "Food",
+        "icon": "UtensilsCrossed",
+        "order": 2,
+        "color": "#f59e0b"
+      },
+      {
+        "id": "cat-fuel",
+        "name": "Fuel",
+        "icon": "Fuel",
+        "order": 3,
+        "color": "#ef4444"
+      },
+      {
+        "id": "cat-shopping",
+        "name": "Shopping",
+        "icon": "ShoppingBag",
+        "order": 4,
+        "color": "#ec4899"
+      },
+      {
+        "id": "cat-bills",
+        "name": "Bills",
+        "icon": "Receipt",
+        "order": 5,
+        "color": "#6366f1"
+      },
+      {
+        "id": "cat-family",
+        "name": "Family",
+        "icon": "Heart",
+        "order": 6,
+        "color": "#14b8a6"
+      },
+      {
+        "id": "cat-personal",
+        "name": "Personal",
+        "icon": "Fingerprint",
+        "order": 7,
+        "color": "#8b5cf6"
+      },
+      {
+        "id": "cat-other",
+        "name": "Other",
+        "icon": "Tag",
+        "order": 8,
+        "color": "#64748b"
+      }
+    ],
+    "transactions": [
+      {
+        "id": "tx_1793090629318_c9bt",
+        "type": "Expense",
+        "amount": 149,
+        "accountId": "acc_1790951200102",
+        "category": "Personal",
+        "date": "2026-10-27",
+        "remark": "Gym fees",
+        "createdAt": "2026-10-27T08:43:49.318Z"
+      },
+      {
+        "id": "tx_1793045941416_c5sc",
+        "type": "Expense",
+        "amount": 9,
+        "accountId": "acc_1791497983529",
+        "category": "Food",
+        "subCategory": "Groceries",
+        "date": "2026-10-26",
+        "remark": "Vegetable",
+        "createdAt": "2026-10-26T20:19:01.416Z"
+      },
+      {
+        "id": "tx_1793045847766_9853",
+        "type": "Expense",
+        "amount": 39,
+        "accountId": "acc-1",
+        "category": "Bills",
+        "subCategory": "Utilities",
+        "date": "2026-10-26",
+        "remark": "Cylinder refill",
+        "createdAt": "2026-10-26T20:17:27.766Z"
+      },
+      {
+        "id": "tx_1792862438789_u8lr",
+        "type": "Expense",
+        "amount": 28,
+        "accountId": "acc-1",
+        "category": "Food",
+        "date": "2026-10-24",
+        "remark": "Food",
+        "createdAt": "2026-10-24T17:20:38.789Z"
+      },
+      {
+        "id": "tx_1793091303751_moxm",
+        "type": "Expense",
+        "amount": 25,
+        "accountId": "acc_1791498669839",
+        "category": "Other",
+        "date": "2026-10-23",
+        "remark": "Issalesawab",
+        "createdAt": "2026-10-27T08:55:03.751Z"
+      },
+      {
+        "id": "tx_1792773769295_no7r",
+        "type": "Expense",
+        "amount": 64,
+        "accountId": "acc-1",
+        "category": "Food",
+        "date": "2026-10-23",
+        "remark": "Food",
+        "createdAt": "2026-10-23T16:42:49.295Z"
+      },
+      {
+        "id": "tx_1792773722717_qqu7",
+        "type": "Expense",
+        "amount": 94,
+        "accountId": "acc-1",
+        "category": "Food",
+        "date": "2026-10-23",
+        "remark": "Umrah Food Juice Milk",
+        "createdAt": "2026-10-23T16:42:02.717Z"
+      },
+      {
+        "id": "tx_1792619877026_56k5",
+        "type": "Expense",
+        "amount": 134.5,
+        "accountId": "acc-1",
+        "category": "Personal",
+        "subCategory": "Rent & Living",
+        "date": "2026-10-21",
+        "remark": "Visit visa Extension",
+        "createdAt": "2026-10-21T21:57:57.026Z"
+      },
+      {
+        "id": "tx_1792619808782_20ld",
+        "type": "Expense",
+        "amount": 4,
+        "accountId": "acc-1",
+        "category": "Food",
+        "date": "2026-10-21",
+        "remark": "Water refill",
+        "createdAt": "2026-10-21T21:56:48.782Z"
+      },
+      {
+        "id": "tx_1792560913014_6vzt",
+        "type": "Expense",
+        "amount": 105,
+        "accountId": "acc-3",
+        "category": "Car",
+        "subCategory": "Fuel",
+        "date": "2026-10-21",
+        "remark": "Car Fuel Refill (fuel)",
+        "createdAt": "2026-10-21T05:35:13.014Z"
+      },
+      {
+        "id": "tx_1792528882347_x14z",
+        "type": "Expense",
+        "amount": 51,
+        "accountId": "acc_1791497983529",
+        "category": "Food",
+        "subCategory": "Groceries",
+        "date": "2026-10-20",
+        "remark": "Rice yoghurts",
+        "createdAt": "2026-10-20T20:41:22.347Z"
+      },
+      {
+        "id": "tx_1792441853260_ntij",
+        "type": "Expense",
+        "amount": 93,
+        "accountId": "acc_1791497983529",
+        "category": "Food",
+        "subCategory": "Investment",
+        "date": "2026-10-19",
+        "remark": "Vegetables",
+        "createdAt": "2026-10-19T20:30:53.260Z"
+      },
+      {
+        "id": "tx_1792441640196_4gse",
+        "type": "Expense",
+        "amount": 71.7,
+        "accountId": "acc-1",
+        "category": "Food",
+        "date": "2026-10-19",
+        "remark": "Multivitamin",
+        "createdAt": "2026-10-19T20:27:20.196Z"
+      },
+      {
+        "id": "tx_1792561341411_qqvh",
+        "type": "Expense",
+        "amount": 81.37,
+        "accountId": "acc_1790951200102",
+        "category": "Shopping",
+        "subCategory": "Home improvement",
+        "date": "2026-10-18",
+        "remark": "Aliexpress order",
+        "createdAt": "2026-10-21T05:42:21.411Z"
+      },
+      {
+        "id": "tx_1792328906078_s9ri",
+        "type": "Expense",
+        "amount": 5,
+        "accountId": "acc_1790855039108",
+        "category": "Food",
+        "subCategory": "Coffee & Snacks",
+        "date": "2026-10-16",
+        "remark": "Coffee",
+        "createdAt": "2026-10-18T13:08:26.078Z"
+      },
+      {
+        "id": "tx_1792328879699_lum2",
+        "type": "Expense",
+        "amount": 265.98,
+        "accountId": "acc-1",
+        "category": "Food",
+        "subCategory": "Groceries",
+        "date": "2026-10-16",
+        "remark": "Juicer, lulu groceries",
+        "createdAt": "2026-10-18T13:07:59.699Z"
+      },
+      {
+        "id": "tx_1792328679472_4d6v",
+        "type": "Expense",
+        "amount": 24,
+        "accountId": "acc-1",
+        "category": "Food",
+        "date": "2026-10-16",
+        "remark": "Bhukhari rice, Rita",
+        "createdAt": "2026-10-18T13:04:39.472Z"
+      },
+      {
+        "id": "tx_1792328631991_jarl",
+        "type": "Expense",
+        "amount": 11,
+        "accountId": "acc-1",
+        "category": "Food",
+        "date": "2026-10-15",
+        "remark": "Juice",
+        "createdAt": "2026-10-18T13:03:51.991Z"
+      },
+      {
+        "id": "tx_1792046864468_0ntj",
+        "type": "Expense",
+        "amount": 4,
+        "accountId": "acc-1",
+        "category": "Food",
+        "subCategory": "Groceries",
+        "date": "2026-10-14",
+        "remark": "Water refill",
+        "createdAt": "2026-10-15T06:47:44.468Z"
+      },
+      {
+        "id": "tx_1792046973707_pngu",
+        "type": "Expense",
+        "amount": 10,
+        "accountId": "acc_1791355409897",
+        "category": "Food",
+        "subCategory": "Coffee & Snacks",
+        "date": "2026-10-13",
+        "remark": "Juice",
+        "createdAt": "2026-10-15T06:49:33.707Z"
+      },
+      {
+        "id": "tx_1791922105975_fiiv",
+        "type": "Expense",
+        "amount": 78,
+        "accountId": "acc-1",
+        "category": "Food",
+        "subCategory": "Groceries",
+        "date": "2026-10-13",
+        "remark": "Mutton",
+        "createdAt": "2026-10-13T20:08:25.975Z"
+      },
+      {
+        "id": "tx_1792046831363_1twy",
+        "type": "Expense",
+        "amount": 23.45,
+        "accountId": "acc-1",
+        "category": "Personal",
+        "subCategory": "Health & Medicine",
+        "date": "2026-10-12",
+        "remark": "Medicine",
+        "createdAt": "2026-10-15T06:47:11.363Z"
+      },
+      {
+        "id": "tx_1791816514337_yom3",
+        "type": "Expense",
+        "amount": 94.75,
+        "accountId": "acc_1790855039108",
+        "category": "Bills",
+        "subCategory": "Mobile Recharge",
+        "date": "2026-10-11",
+        "remark": "Recharge STC",
+        "createdAt": "2026-10-12T14:48:34.337Z"
+      },
+      {
+        "id": "tx_1791815477939_me4n",
+        "type": "Expense",
+        "amount": 169.5,
+        "accountId": "acc_1791497983529",
+        "category": "Shopping",
+        "subCategory": "Electronics",
+        "date": "2026-10-11",
+        "remark": "Lulu grocery and acer keyboard mouse",
+        "createdAt": "2026-10-12T14:31:17.939Z"
+      },
+      {
+        "id": "tx_1791815437399_7jvc",
+        "type": "Money Added",
+        "amount": 169.5,
+        "accountId": "acc_1791497983529",
+        "category": "Income",
+        "date": "2026-10-11",
+        "remark": "Available cash",
+        "createdAt": "2026-10-12T14:30:37.399Z"
+      },
+      {
+        "id": "tx_1791580690304_lmt2",
+        "type": "Expense",
+        "amount": 103,
+        "accountId": "acc-3",
+        "category": "Car",
+        "subCategory": "Fuel",
+        "date": "2026-10-09",
+        "remark": "Fuel",
+        "createdAt": "2026-10-09T21:18:10.304Z"
+      },
+      {
+        "id": "tx_1791579367910_35lp",
+        "type": "Transfer",
+        "amount": 42.5,
+        "accountId": "acc-1",
+        "toAccountId": "acc_1791355409897",
+        "category": "Transfer",
+        "date": "2026-10-09",
+        "remark": "Atm withdraw",
+        "createdAt": "2026-10-09T20:56:07.910Z"
+      },
+      {
+        "id": "tx_1791579175748_avho",
+        "type": "Expense",
+        "amount": 4,
+        "accountId": "acc_1791355409897",
+        "category": "Food",
+        "subCategory": "Groceries",
+        "date": "2026-10-09",
+        "remark": "Water refill",
+        "createdAt": "2026-10-09T20:52:55.748Z"
+      },
+      {
+        "id": "tx_1791579128510_f2y6",
+        "type": "Expense",
+        "amount": 40,
+        "accountId": "acc_1791498669839",
+        "category": "Family",
+        "subCategory": "Sadaqa",
+        "date": "2026-10-09",
+        "remark": "Water",
+        "createdAt": "2026-10-09T20:52:08.510Z"
+      },
+      {
+        "id": "tx_1791578825248_2wrm",
+        "type": "Expense",
+        "amount": 13.5,
+        "accountId": "acc-1",
+        "category": "Food",
+        "subCategory": "Dining",
+        "date": "2026-10-09",
+        "remark": "Al baik",
+        "createdAt": "2026-10-09T20:47:05.248Z"
+      },
+      {
+        "id": "tx_1791499222079_y4rb",
+        "type": "Money Added",
+        "amount": 1500,
+        "accountId": "acc_1791497983529",
+        "category": "Income",
+        "date": "2026-10-09",
+        "remark": "Added funds",
+        "createdAt": "2026-10-08T22:40:22.079Z"
+      },
+      {
+        "id": "tx_1791498399356_2dsq",
+        "type": "Expense",
+        "amount": 280,
+        "accountId": "acc_1790855039108",
+        "category": "Car",
+        "subCategory": "Maintenance",
+        "date": "2026-10-09",
+        "remark": "Battery Installation",
+        "createdAt": "2026-10-08T22:26:39.356Z"
+      },
+      {
+        "id": "tx_1791567992145_7gk3",
+        "type": "Expense",
+        "amount": 5,
+        "accountId": "acc_1791355409897",
+        "category": "Food",
+        "subCategory": "Coffee & Snacks",
+        "date": "2026-10-08",
+        "remark": "Papaya juice",
+        "createdAt": "2026-10-09T17:46:32.145Z"
+      },
+      {
+        "id": "tx_1791498728041_ip4c",
+        "type": "Transfer",
+        "amount": 137.5,
+        "accountId": "acc-1",
+        "toAccountId": "acc_1791498669839",
+        "category": "Transfer",
+        "date": "2026-10-08",
+        "remark": "Isalesawab Money",
+        "createdAt": "2026-10-08T22:32:08.041Z"
+      },
+      {
+        "id": "tx_1791498591041_jnt8",
+        "type": "Expense",
+        "amount": 4,
+        "accountId": "acc_1791355409897",
+        "category": "Food",
+        "subCategory": "Dining",
+        "date": "2026-10-08",
+        "remark": "Rice bhukhari",
+        "createdAt": "2026-10-08T22:29:51.041Z"
+      },
+      {
+        "id": "tx_1791498530035_dohd",
+        "type": "Expense",
+        "amount": 24.4,
+        "accountId": "acc-1",
+        "category": "Personal",
+        "subCategory": "Health & Medicine",
+        "date": "2026-10-08",
+        "remark": "Medicine duphalac",
+        "createdAt": "2026-10-08T22:28:50.035Z"
+      },
+      {
+        "id": "tx_1791498494025_gcvq",
+        "type": "Expense",
+        "amount": 74.75,
+        "accountId": "acc-1",
+        "category": "Shopping",
+        "subCategory": "Groceries",
+        "date": "2026-10-08",
+        "remark": "Khamza market",
+        "createdAt": "2026-10-08T22:28:14.025Z"
+      },
+      {
+        "id": "tx_1791498453639_60fv",
+        "type": "Expense",
+        "amount": 690,
+        "accountId": "acc_1790855039108",
+        "category": "Car",
+        "subCategory": "Maintenance",
+        "date": "2026-10-08",
+        "remark": "Car Insurance",
+        "createdAt": "2026-10-08T22:27:33.639Z"
+      },
+      {
+        "id": "tx_1791561201922_vmyl",
+        "type": "Expense",
+        "amount": 16,
+        "accountId": "acc-1",
+        "category": "Food",
+        "subCategory": "Coffee & Snacks",
+        "date": "2026-10-07",
+        "remark": "Barns coffee",
+        "createdAt": "2026-10-09T15:53:21.922Z"
+      },
+      {
+        "id": "tx_1791561183197_xv1z",
+        "type": "Expense",
+        "amount": 69,
+        "accountId": "acc-1",
+        "category": "Shopping",
+        "subCategory": "Clothing",
+        "date": "2026-10-07",
+        "remark": "Abaya",
+        "createdAt": "2026-10-09T15:53:03.197Z"
+      },
+      {
+        "id": "tx_1791355493264_h3w3",
+        "type": "Expense",
+        "amount": 50,
+        "accountId": "acc_1791497983529",
+        "category": "Car",
+        "subCategory": "Cleaning",
+        "date": "2026-10-07",
+        "remark": "Car cleaning monthly",
+        "createdAt": "2026-10-07T06:44:53.264Z"
+      },
+      {
+        "id": "tx_1791355463885_xei6",
+        "type": "Expense",
+        "amount": 1,
+        "accountId": "acc_1791355409897",
+        "category": "Food",
+        "subCategory": "Groceries",
+        "date": "2026-10-06",
+        "remark": "Khubz",
+        "createdAt": "2026-10-07T06:44:23.885Z"
+      },
+      {
+        "id": "tx_1791355432931_kjxv",
+        "type": "Expense",
+        "amount": 15,
+        "accountId": "acc_1791355409897",
+        "category": "Food",
+        "subCategory": "Coffee & Snacks",
+        "date": "2026-10-06",
+        "remark": "Juice",
+        "createdAt": "2026-10-07T06:43:52.931Z"
+      },
+      {
+        "id": "tx_1791236242826_mf40",
+        "type": "Expense",
+        "amount": 48,
+        "accountId": "acc-1",
+        "category": "Food",
+        "subCategory": "Dining",
+        "date": "2026-10-05",
+        "remark": "Umar visit and food",
+        "createdAt": "2026-10-05T21:37:22.826Z"
+      },
+      {
+        "id": "tx_1791204198676_0l04",
+        "type": "Expense",
+        "amount": 58,
+        "accountId": "acc-1",
+        "category": "Food",
+        "subCategory": "Dining",
+        "date": "2026-10-05",
+        "remark": "Umar Home",
+        "createdAt": "2026-10-05T12:43:18.676Z"
+      },
+      {
+        "id": "tx_1791189561163_im4k",
+        "type": "Expense",
+        "amount": 21.87,
+        "accountId": "acc-1",
+        "category": "Personal",
+        "subCategory": "Accessories",
+        "date": "2026-10-04",
+        "remark": "Hand gloves",
+        "createdAt": "2026-10-05T08:39:21.163Z"
+      },
+      {
+        "id": "tx_1791062097156_ej61",
+        "type": "Expense",
+        "amount": 73,
+        "accountId": "acc-1",
+        "category": "Food",
+        "subCategory": "Dining",
+        "date": "2026-10-04",
+        "remark": "1947 indian kitchen",
+        "createdAt": "2026-10-03T21:14:57.156Z"
+      },
+      {
+        "id": "tx_1791062064696_l5ir",
+        "type": "Expense",
+        "amount": 216.88,
+        "accountId": "acc-1",
+        "category": "Shopping",
+        "subCategory": "Accessories",
+        "date": "2026-10-04",
+        "remark": "Purse and Socks",
+        "createdAt": "2026-10-03T21:14:24.696Z"
+      },
+      {
+        "id": "tx_1790957398394_83oo",
+        "type": "Expense",
+        "amount": 2,
+        "accountId": "acc-1",
+        "category": "Food",
+        "subCategory": "Coffee & Snacks",
+        "date": "2026-10-02",
+        "remark": "Tea",
+        "createdAt": "2026-10-02T16:09:58.394Z"
+      },
+      {
+        "id": "tx_1790937271192_3u56",
+        "type": "Expense",
+        "amount": 31,
+        "accountId": "acc-1",
+        "category": "Food",
+        "subCategory": "Dining",
+        "date": "2026-10-02",
+        "remark": "Grove breakfast",
+        "createdAt": "2026-10-02T10:34:31.192Z"
+      },
+      {
+        "id": "tx_1790896790098_jqtz",
+        "type": "Expense",
+        "amount": 500,
+        "accountId": "acc-1",
+        "category": "Personal",
+        "subCategory": "Investment",
+        "date": "2026-10-01",
+        "remark": "Investment",
+        "createdAt": "2026-10-01T23:19:50.098Z"
+      },
+      {
+        "id": "tx_1790893691410_3sls",
+        "type": "Expense",
+        "amount": 5405,
+        "accountId": "acc-1",
+        "category": "Personal",
+        "subCategory": "Rent & Living",
+        "date": "2026-10-01",
+        "remark": "Rent, groceries, rozzy pocket money, saving",
+        "createdAt": "2026-10-01T22:28:11.410Z"
+      },
+      {
+        "id": "tx_1790893437316_gitw",
+        "type": "Expense",
+        "amount": 175,
+        "accountId": "acc-1",
+        "category": "Shopping",
+        "subCategory": "Accessories",
+        "date": "2026-10-01",
+        "remark": "Silver Ring",
+        "createdAt": "2026-10-01T22:23:57.316Z"
+      },
+      {
+        "id": "tx_1790893412710_u87k",
+        "type": "Expense",
+        "amount": 13,
+        "accountId": "acc-1",
+        "category": "Food",
+        "subCategory": "Dining",
+        "date": "2026-10-01",
+        "remark": "Mall of Arabia Food",
+        "createdAt": "2026-10-01T22:23:32.710Z"
+      },
+      {
+        "id": "tx_1790893365953_jzam",
+        "type": "Expense",
+        "amount": 17.5,
+        "accountId": "acc-1",
+        "category": "Bills",
+        "subCategory": "Mobile Recharge",
+        "date": "2026-10-01",
+        "remark": "Mobily Recharge",
+        "createdAt": "2026-10-01T22:22:45.953Z"
+      },
+      {
+        "id": "tx_1790855565538_a5q9",
+        "type": "Expense",
+        "amount": 1057.5,
+        "accountId": "acc-1",
+        "category": "Family",
+        "subCategory": "Home",
+        "date": "2026-09-30",
+        "remark": "Home 800, Mummy 120, Sadaqa 137.5",
+        "createdAt": "2026-10-01T11:52:45.538Z"
+      },
+      {
+        "id": "tx_1790855511019_kxvt",
+        "type": "Expense",
+        "amount": 109,
+        "accountId": "acc-3",
+        "category": "Car",
+        "subCategory": "Fuel",
+        "date": "2026-09-30",
+        "remark": "Petrol",
+        "createdAt": "2026-10-01T11:51:51.019Z"
+      },
+      {
+        "id": "tx_1791499573771_0k85",
+        "type": "Expense",
+        "amount": 1500,
+        "accountId": "acc_1791497983529",
+        "category": "Car",
+        "subCategory": "Maintenance",
+        "date": "2026-08-18",
+        "remark": "Gear box Maintenance, oil change, Fuel injector",
+        "createdAt": "2026-10-08T22:46:13.771Z"
+      }
+    ],
+    "notes": [
+      {
+        "id": "note_1791390008008",
+        "title": "Bugs tweaks",
+        "content": "Log entry not able to adit\nAi integration",
+        "tags": [
+          "Personal"
+        ],
+        "createdAt": "2026-10-07T16:20:08.008Z",
+        "updatedAt": "2026-10-09T21:19:45.845Z"
+      },
+      {
+        "id": "note_1791114700376",
+        "title": "Items to buy",
+        "content": "1. Booster cable \n2. Torque wrench\n3. Electric car jack\n4. Water cooler\n5. Ugreen K331 MK006 LP669 4000 DPI mouse",
+        "tags": [
+          "Car"
+        ],
+        "createdAt": "2026-10-04T11:51:40.376Z",
+        "updatedAt": "2026-10-05T09:21:22.813Z"
+      }
+    ],
+    "loans": [
+      {
+        "id": "loan_1790855268078_t4p",
+        "name": "Haris",
+        "originalCurrency": "INR",
+        "originalAmount": 100000,
+        "lenderName": "Haris",
+        "startDate": "2026-10-01",
+        "remark": "For increase investment (Original: 100000 INR)",
+        "createdAt": "2026-10-01T11:47:48.078Z"
+      },
+      {
+        "id": "loan-1",
+        "name": "Shahid Mamu",
+        "originalCurrency": "INR",
+        "originalAmount": 100000,
+        "lenderName": "Shahid Mamu",
+        "startDate": "2026-01-10",
+        "remark": "Opening for Shop (Original: 100000 INR)",
+        "createdAt": "2026-08-02T11:41:56.413Z"
+      }
+    ],
+    "loanPayments": [
+      {
+        "id": "lp-3",
+        "loanId": "loan-2",
+        "amount": 4000,
+        "currency": "SAR",
+        "exchangeRateUsed": 1,
+        "date": "2026-10-01",
+        "paidBy": "Me",
+        "accountId": "acc-1",
+        "remark": "Monthly principal reduction payment",
+        "createdAt": "2026-09-30T23:13:38.355Z"
+      }
+    ],
+    "contributors": [
+      {
+        "id": "contrib-1",
+        "name": "Me",
+        "isDefault": true
+      },
+      {
+        "id": "contrib-2",
+        "name": "Brother"
+      },
+      {
+        "id": "contrib-3",
+        "name": "Father"
+      },
+      {
+        "id": "contrib-4",
+        "name": "Friend"
+      },
+      {
+        "id": "contrib-5",
+        "name": "Company"
+      },
+      {
+        "id": "contrib-6",
+        "name": "Other"
+      }
+    ],
+    "wishlists": [
+      {
+        "id": "wl-1",
+        "title": "Booster Cable & Electric Car Jack",
+        "estimatedPriceSAR": 600,
+        "savedAmountSAR": 0,
+        "priority": "high",
+        "category": "Car",
+        "targetDate": "2026-10-15",
+        "notes": "Essential roadside gear for emergency safety",
+        "isPurchased": false,
+        "createdAt": "2026-10-04T12:00:00.000Z",
+        "productUrl": ""
+      },
+      {
+        "id": "wl-2",
+        "title": "Car Seat Cover & Flooring (Saudi Made)",
+        "estimatedPriceSAR": 550,
+        "savedAmountSAR": 0,
+        "priority": "medium",
+        "category": "Car",
+        "targetDate": "2026-10-25",
+        "notes": "With steering gear cover as per workshop quotation",
+        "isPurchased": false,
+        "createdAt": "2026-10-04T12:30:00.000Z",
+        "productUrl": ""
+      }
+    ],
+    "exchangeRate": {
+      "rateSarToInr": 25.7,
+      "rateInrToSar": 0.038910505836575876,
+      "lastUpdated": "2026-10-27T10:24:42.607Z"
+    }
+  }
+}

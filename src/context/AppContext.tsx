@@ -48,6 +48,11 @@ interface AppContextType {
   activeTab: TabType;
   setActiveTab: (tab: TabType) => void;
 
+  // Account Ledger Drilldown
+  selectedAccountId: string | null;
+  setSelectedAccountId: (id: string | null) => void;
+  openAccountLedger: (accountId: string) => void;
+
   // Settings & Theme
   settings: AppSettings;
   updateSettings: (partial: Partial<AppSettings>) => void;
@@ -333,21 +338,27 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       setNotes(INITIAL_NOTES);
       setLoans(INITIAL_LOANS);
       setCategories(INITIAL_CATEGORIES);
+      setWishlists(INITIAL_WISHLISTS);
       setDataVersion(CURRENT_DATA_VERSION);
       saveToStorage(STORAGE_KEYS.DATA_VERSION, CURRENT_DATA_VERSION);
     }
   }, []);
 
-  // Apply theme class to document
+  // Apply theme class and mobile status bar color to document
   useEffect(() => {
     const root = document.documentElement;
-    if (
+    const isDark =
       settings.theme === 'dark' ||
-      (settings.theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
+      (settings.theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+    if (isDark) {
       root.classList.add('dark');
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', '#0B0F17');
     } else {
       root.classList.remove('dark');
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', '#F8FAFC');
     }
   }, [settings.theme]);
 
@@ -392,6 +403,19 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       }
     },
     [activeTab, settings.enableHaptics]
+  );
+
+  // Account Ledger Drilldown state (View transactions by account)
+  const [selectedAccountId, setSelectedAccountId] = useState<string | null>(null);
+
+  const openAccountLedger = useCallback(
+    (accountId: string) => {
+      triggerHaptic('light', settings.enableHaptics);
+      setSelectedAccountId(accountId);
+      setActiveTabState('money');
+      window.history.pushState({ tab: 'money', accountId }, '');
+    },
+    [settings.enableHaptics]
   );
 
   const openEditModal = useCallback(
@@ -1317,35 +1341,35 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         if (parsed.accounts.length > 0) {
           setAccounts((prev) => {
             const existingIds = new Set(prev.map((a) => a.id));
-            const newItems = parsed.accounts.filter((a) => !existingIds.has(a.id));
+            const newItems = parsed.accounts.filter((a: any) => !existingIds.has(a.id));
             return [...prev, ...newItems];
           });
         }
         if (parsed.transactions.length > 0) {
           setTransactions((prev) => {
             const existingIds = new Set(prev.map((t) => t.id));
-            const newItems = parsed.transactions.filter((t) => !existingIds.has(t.id));
+            const newItems = parsed.transactions.filter((t: any) => !existingIds.has(t.id));
             return sortTransactionsByDate([...newItems, ...prev]);
           });
         }
         if (parsed.followups.length > 0) {
           setFollowups((prev) => {
             const existingIds = new Set(prev.map((f) => f.id));
-            const newItems = parsed.followups.filter((f) => !existingIds.has(f.id));
+            const newItems = parsed.followups.filter((f: any) => !existingIds.has(f.id));
             return [...newItems, ...prev];
           });
         }
         if (parsed.notes.length > 0) {
           setNotes((prev) => {
             const existingIds = new Set(prev.map((n) => n.id));
-            const newItems = parsed.notes.filter((n) => !existingIds.has(n.id));
+            const newItems = parsed.notes.filter((n: any) => !existingIds.has(n.id));
             return [...newItems, ...prev];
           });
         }
         if (parsed.loans.length > 0) {
           setLoans((prev) => {
             const existingIds = new Set(prev.map((l) => l.id));
-            const newItems = parsed.loans.filter((l) => !existingIds.has(l.id));
+            const newItems = parsed.loans.filter((l: any) => !existingIds.has(l.id));
             return [...newItems, ...prev];
           });
         }
@@ -1568,6 +1592,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const value = {
     activeTab,
     setActiveTab,
+    selectedAccountId,
+    setSelectedAccountId,
+    openAccountLedger,
     settings,
     updateSettings,
     toggleTheme,

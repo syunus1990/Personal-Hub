@@ -125,6 +125,8 @@ export interface Loan {
   counterpartyPhone?: string;
   amountSAR: number;
   repaidAmountSAR: number;
+  originalCurrency?: string;
+  originalAmount?: number;
   dueDate: string;
   status: LoanStatus;
   notes?: string;
@@ -140,9 +142,10 @@ export interface AppSettings {
   displayCurrency: Currency; // default display currency toggle
   enableExchangeRate: boolean; // if false, disable exchange rate and show all in primary currency
   enableHaptics: boolean;
-  isFullscreen: boolean;
+  isFullscreen?: boolean;
   brandingLabel?: string; // e.g. "Daily Pulse", "Horizon Studio", etc.
   syncGateEnabled?: boolean; // If true on PC, enforce mandatory mobile sync gate
+  cloudRelayUrl?: string;
 }
 
 export type TabType = 'dashboard' | 'money' | 'notes' | 'followups' | 'wishlists' | 'loans';

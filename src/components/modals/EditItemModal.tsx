@@ -87,9 +87,20 @@ export const EditItemModal: React.FC = () => {
   const [txDate, setTxDate] = useState<string>(new Date().toISOString().split('T')[0]);
   const [aiResult, setAiResult] = useState<AICategorizationResult | null>(null);
 
-  // Flexible inline sub-category creation state
+  // Flexible inline main category & sub-category creation state
+  const [isAddingCategory, setIsAddingCategory] = useState(false);
+  const [newCatInput, setNewCatInput] = useState('');
   const [isAddingSub, setIsAddingSub] = useState(false);
   const [newSubInput, setNewSubInput] = useState('');
+
+  const handleCreateMainCategory = () => {
+    if (!newCatInput.trim()) return;
+    const created = addCategory(newCatInput.trim());
+    setTxCategory(created.name);
+    setTxSubCategory('');
+    setNewCatInput('');
+    setIsAddingCategory(false);
+  };
 
   // 2. Account Form
   const [accName, setAccName] = useState<string>('');
@@ -1135,10 +1146,49 @@ export const EditItemModal: React.FC = () => {
                     <label className="text-[11px] font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wider">
                       Category
                     </label>
-                    <span className="text-[10px] text-slate-400">
-                      {txCategory === 'Car' ? 'Car Module with Sub-categories' : 'Selected Category'}
-                    </span>
+                    <button
+                      type="button"
+                      onClick={() => setIsAddingCategory(!isAddingCategory)}
+                      className="text-[11px] font-semibold text-purple-600 dark:text-purple-400 hover:underline flex items-center gap-1"
+                    >
+                      <Plus className="w-3 h-3" />
+                      <span>+ Add Category</span>
+                    </button>
                   </div>
+
+                  {/* Inline New Category input */}
+                  {isAddingCategory && (
+                    <div className="flex items-center gap-2 mb-2 p-2 rounded-xl bg-white dark:bg-slate-900 border border-purple-300 dark:border-purple-700 animate-in fade-in duration-150">
+                      <input
+                        type="text"
+                        value={newCatInput}
+                        onChange={(e) => setNewCatInput(e.target.value)}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') {
+                            e.preventDefault();
+                            handleCreateMainCategory();
+                          }
+                        }}
+                        placeholder="New category name..."
+                        className="flex-1 text-xs bg-transparent focus:outline-none text-slate-800 dark:text-slate-100"
+                        autoFocus
+                      />
+                      <button
+                        type="button"
+                        onClick={handleCreateMainCategory}
+                        className="px-2.5 py-1 rounded-lg bg-purple-600 hover:bg-purple-700 text-white text-[11px] font-semibold shadow-xs"
+                      >
+                        Save
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setIsAddingCategory(false)}
+                        className="text-slate-400 text-xs hover:text-slate-600"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  )}
 
                   <select
                     value={txCategory}

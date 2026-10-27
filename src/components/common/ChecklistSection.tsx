@@ -62,8 +62,11 @@ export const ChecklistSection: React.FC<ChecklistSectionProps> = ({
   const totalCount = items.length;
   const allCompleted = totalCount > 0 && completedCount === totalCount;
 
-  const handleAddSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleAddAction = (e?: React.SyntheticEvent) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
     if (!newText.trim() || !onAdd) return;
     onAdd(newText.trim());
     setNewText('');
@@ -191,31 +194,44 @@ export const ChecklistSection: React.FC<ChecklistSectionProps> = ({
                 {/* Text or Edit Input */}
                 <div className="flex-1 min-w-0">
                   {isEditingThis ? (
-                    <form
-                      onSubmit={(e) => handleSaveEdit(item.id, e)}
+                    <div
                       className="flex items-center gap-1"
+                      onClick={(e) => e.stopPropagation()}
                     >
                       <input
                         type="text"
                         autoFocus
                         value={editingText}
                         onChange={(e) => setEditingText(e.target.value)}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            handleSaveEdit(item.id, e);
+                          } else if (e.key === 'Escape') {
+                            setEditingItemId(null);
+                          }
+                        }}
                         className="w-full text-xs px-2 py-0.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white focus:outline-none"
                       />
                       <button
-                        type="submit"
+                        type="button"
+                        onClick={(e) => handleSaveEdit(item.id, e)}
                         className="w-5 h-5 rounded flex items-center justify-center text-emerald-600 hover:bg-emerald-50"
                       >
                         <Check className="w-3 h-3" />
                       </button>
                       <button
                         type="button"
-                        onClick={() => setEditingItemId(null)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setEditingItemId(null);
+                        }}
                         className="w-5 h-5 rounded flex items-center justify-center text-slate-400 hover:bg-slate-100"
                       >
                         <X className="w-3 h-3" />
                       </button>
-                    </form>
+                    </div>
                   ) : (
                     <div>
                       <p
@@ -273,25 +289,40 @@ export const ChecklistSection: React.FC<ChecklistSectionProps> = ({
 
       {/* Inline add form */}
       {isAdding && (
-        <form onSubmit={handleAddSubmit} className="flex items-center gap-1 pt-1">
+        <div
+          className="flex items-center gap-1 pt-1"
+          onClick={(e) => e.stopPropagation()}
+        >
           <input
             type="text"
             autoFocus
             value={newText}
             onChange={(e) => setNewText(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault();
+                e.stopPropagation();
+                handleAddAction(e);
+              } else if (e.key === 'Escape') {
+                setIsAdding(false);
+                setNewText('');
+              }
+            }}
             placeholder="Add sub-task / note (e.g. check programming)..."
-            className="flex-1 text-xs px-2.5 py-1.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-slate-400"
+            className="flex-1 text-xs px-2.5 py-1.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-purple-400"
           />
           <button
-            type="submit"
+            type="button"
+            onClick={(e) => handleAddAction(e)}
             disabled={!newText.trim()}
-            className="px-2.5 py-1.5 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-semibold hover:opacity-90 disabled:opacity-40 transition-opacity"
+            className="px-2.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold disabled:opacity-40 transition-opacity"
           >
             Add
           </button>
           <button
             type="button"
-            onClick={() => {
+            onClick={(e) => {
+              e.stopPropagation();
               setIsAdding(false);
               setNewText('');
             }}
@@ -299,7 +330,7 @@ export const ChecklistSection: React.FC<ChecklistSectionProps> = ({
           >
             <X className="w-3.5 h-3.5" />
           </button>
-        </form>
+        </div>
       )}
     </div>
   );

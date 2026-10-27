@@ -85,13 +85,13 @@ export const LoansView: React.FC<LoansViewProps> = ({ isEmbeddedSubSection = fal
 
       {/* Control Bar */}
       <div className="flex items-center justify-between gap-2">
-        <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-slate-200/50 dark:bg-slate-800/60 text-xs font-medium">
+        <div className="flex items-center gap-1.5 p-1 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 text-xs font-semibold">
           <button
             onClick={() => setFilterType('all')}
             className={`py-1 px-3 rounded-xl transition-all ${
               filterType === 'all'
-                ? 'bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-xs font-semibold'
-                : 'text-slate-600 dark:text-slate-400'
+                ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-bold border border-slate-200/60 dark:border-transparent'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
             }`}
           >
             All ({loans.length})
@@ -100,8 +100,8 @@ export const LoansView: React.FC<LoansViewProps> = ({ isEmbeddedSubSection = fal
             onClick={() => setFilterType('lent')}
             className={`py-1 px-3 rounded-xl transition-all ${
               filterType === 'lent'
-                ? 'bg-emerald-600 text-white shadow-xs font-semibold'
-                : 'text-slate-600 dark:text-slate-400'
+                ? 'bg-emerald-600 text-white shadow-xs font-bold'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
             }`}
           >
             I Lent
@@ -110,8 +110,8 @@ export const LoansView: React.FC<LoansViewProps> = ({ isEmbeddedSubSection = fal
             onClick={() => setFilterType('borrowed')}
             className={`py-1 px-3 rounded-xl transition-all ${
               filterType === 'borrowed'
-                ? 'bg-rose-600 text-white shadow-xs font-semibold'
-                : 'text-slate-600 dark:text-slate-400'
+                ? 'bg-rose-600 text-white shadow-xs font-bold'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
             }`}
           >
             I Borrowed
@@ -120,7 +120,7 @@ export const LoansView: React.FC<LoansViewProps> = ({ isEmbeddedSubSection = fal
 
         <button
           onClick={() => openEditModal('loan')}
-          className="flex items-center gap-1 px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold shadow-xs transition-colors shrink-0"
+          className="flex items-center gap-1 px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-xs transition-colors shrink-0"
         >
           <Plus className="w-3.5 h-3.5" />
           <span>New Loan</span>
@@ -137,7 +137,7 @@ export const LoansView: React.FC<LoansViewProps> = ({ isEmbeddedSubSection = fal
           return (
             <div
               key={loan.id}
-              className="glass-card rounded-3xl p-4 border border-slate-200/60 dark:border-slate-800/80 hover:border-blue-300 transition-colors"
+              className="glass-card rounded-3xl p-4 border border-slate-200/80 dark:border-slate-800/80 hover:border-blue-400/80 transition-colors"
             >
               {/* Top Row: Counterparty & Type */}
               <div className="flex items-start justify-between gap-3">

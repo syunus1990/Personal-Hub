@@ -41,7 +41,7 @@ const AppContent: React.FC = () => {
   } = useApp();
 
   return (
-    <div className="min-h-screen bg-[#FAF7F5] dark:bg-[#0F141C] text-slate-800 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200">
+    <div className="min-h-screen bg-slate-50 dark:bg-[#0B0F17] text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200">
       {/* Mandatory PC Sync Gate Top Banner */}
       {isGateEnforced && gateState !== 'UNLOCKED' && (
         <div
