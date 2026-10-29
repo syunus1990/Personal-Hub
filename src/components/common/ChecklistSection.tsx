@@ -148,11 +148,15 @@ export const ChecklistSection: React.FC<ChecklistSectionProps> = ({
         {allowAdd && onAdd && !isAdding && (
           <button
             type="button"
-            onClick={() => setIsAdding(true)}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setIsAdding(true);
+            }}
             className={`flex items-center gap-0.5 text-[10px] font-semibold transition-colors px-1.5 py-0.5 rounded-lg ${colorStyles.btn}`}
           >
             <Plus className="w-3 h-3" />
-            <span>Add Note</span>
+            <span>+ Add Item</span>
           </button>
         )}
       </div>

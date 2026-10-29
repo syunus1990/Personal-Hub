@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { AppProvider, useApp } from './context/AppContext';
 import { Header } from './components/common/Header';
 import { BottomTabBar } from './components/common/BottomTabBar';
@@ -40,8 +40,31 @@ const AppContent: React.FC = () => {
     setIsAIAutoDetectOpen,
   } = useApp();
 
+  const [isOffline, setIsOffline] = useState(typeof navigator !== "undefined" ? !navigator.onLine : false);
+
+  useEffect(() => {
+    const handleOnline = () => setIsOffline(false);
+    const handleOffline = () => setIsOffline(true);
+    window.addEventListener("online", handleOnline);
+    window.addEventListener("offline", handleOffline);
+    return () => {
+      window.removeEventListener("online", handleOnline);
+      window.removeEventListener("offline", handleOffline);
+    };
+  }, []);
+
+
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#0B0F17] text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200">
+      
+      {/* Offline Mode Indicator */}
+      {isOffline && (
+        <div className="sticky top-0 z-50 w-full px-3 py-1.5 bg-amber-500 text-slate-950 text-xs font-semibold text-center flex items-center justify-center gap-2 shadow-xs">
+          <span className="w-2 h-2 rounded-full bg-slate-950 animate-pulse" />
+          <span>Offline Mode Active • All data and features are stored safely on your device</span>
+        </div>
+      )}
+
       {/* Mandatory PC Sync Gate Top Banner */}
       {isGateEnforced && gateState !== 'UNLOCKED' && (
         <div

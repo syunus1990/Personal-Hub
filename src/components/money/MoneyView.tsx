@@ -529,10 +529,17 @@ export const MoneyView: React.FC = () => {
                       <div className="text-right shrink-0 flex items-center gap-2">
                         <div>
                           <p className="text-xs font-bold text-rose-600 dark:text-rose-400 tabular-nums">
-                            -{formatCurrency(tx.amountSAR, settings.displayCurrency, settings.exchangeRateSARtoINR)}
+                            {isAmountsHidden ? '••••••' : `-${formatCurrency(tx.amountSAR, settings.displayCurrency, settings.exchangeRateSARtoINR)}`}
                           </p>
-                          <span className="text-[10px] text-slate-400 tabular-nums block">
-                            {formatSecondaryEquivalent(tx.amountSAR, settings.displayCurrency, settings.exchangeRateSARtoINR)}
+                          <span
+                            className="text-[10px] text-slate-500 dark:text-slate-400 tabular-nums block font-medium"
+                            title={account ? `Available balance in ${account.name}` : undefined}
+                          >
+                            {isAmountsHidden
+                              ? '••••'
+                              : account
+                              ? `Bal: ${formatCurrency(account.currentBalanceSAR, settings.displayCurrency, settings.exchangeRateSARtoINR)}`
+                              : '—'}
                           </span>
                         </div>
 
@@ -829,11 +836,22 @@ export const MoneyView: React.FC = () => {
                             : 'text-blue-600 dark:text-blue-400'
                         }`}
                       >
-                        {tx.type === 'income' ? '+' : tx.type === 'expense' ? '-' : ''}
-                        {formatCurrency(tx.amountSAR, settings.displayCurrency, settings.exchangeRateSARtoINR)}
+                        {isAmountsHidden ? '••••••' : (
+                          <>
+                            {tx.type === 'income' ? '+' : tx.type === 'expense' ? '-' : ''}
+                            {formatCurrency(tx.amountSAR, settings.displayCurrency, settings.exchangeRateSARtoINR)}
+                          </>
+                        )}
                       </p>
-                      <span className="text-[10px] text-slate-400 tabular-nums block font-medium">
-                        {formatSecondaryEquivalent(tx.amountSAR, settings.displayCurrency, settings.exchangeRateSARtoINR)}
+                      <span
+                        className="text-[10px] text-slate-500 dark:text-slate-400 tabular-nums block font-medium"
+                        title={account ? `Available balance in ${account.name}` : undefined}
+                      >
+                        {isAmountsHidden
+                          ? '••••'
+                          : account
+                          ? `Bal: ${formatCurrency(account.currentBalanceSAR, settings.displayCurrency, settings.exchangeRateSARtoINR)}`
+                          : '—'}
                       </span>
                     </div>
 
@@ -1215,11 +1233,20 @@ export const MoneyView: React.FC = () => {
                                 : 'text-rose-600 dark:text-rose-400'
                             }`}
                           >
-                            {isDirectIncome || isTransferIn ? '+' : '-'}
-                            {formatCurrency(tx.amountSAR, settings.displayCurrency, settings.exchangeRateSARtoINR)}
+                            {isAmountsHidden ? '••••••' : (
+                              <>
+                                {isDirectIncome || isTransferIn ? '+' : '-'}
+                                {formatCurrency(tx.amountSAR, settings.displayCurrency, settings.exchangeRateSARtoINR)}
+                              </>
+                            )}
                           </p>
-                          <span className="text-[10px] text-slate-500 dark:text-slate-400 tabular-nums block font-medium">
-                            {formatSecondaryEquivalent(tx.amountSAR, settings.displayCurrency, settings.exchangeRateSARtoINR)}
+                          <span
+                            className="text-[10px] text-slate-500 dark:text-slate-400 tabular-nums block font-medium"
+                            title={`Available balance in ${selectedAccount.name}`}
+                          >
+                            {isAmountsHidden
+                              ? '••••'
+                              : `Bal: ${formatCurrency(selectedAccount.currentBalanceSAR, settings.displayCurrency, settings.exchangeRateSARtoINR)}`}
                           </span>
                         </div>
 

@@ -1,29 +1,31 @@
 /**
- * sw.js - Service Worker for Offline Caching (PWA)
- * Caches HTML, CSS, JS, manifest, and icons for offline resilience.
+ * sw.js - Personal Hub Offline-First Service Worker
+ * Fully offline-capable caching for all app assets, scripts, styles, fonts, and pages.
  */
 
-const CACHE_NAME = 'personal-hub-v2.5';
-const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/sync.js',
-  '/qr.js',
-  '/gate.js',
-  '/Personal_Hub_Backup.json',
+const CACHE_NAME = "personal-hub-v3.0-offline";
+
+const CORE_PRECACHE = [
+  "/",
+  "/index.html",
+  "/manifest.json",
+  "/favicon.png",
+  "/apple-touch-icon.png",
+  "/icon.svg",
+  "/pwa-192x192.png",
+  "/pwa-512x512.png",
+  "/Personal_Hub_Template.xlsx"
 ];
 
-self.addEventListener('install', (event) => {
+self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS_TO_CACHE);
-    })
+      return cache.addAll(CORE_PRECACHE);
+    }).then(() => self.skipWaiting())
   );
-  self.skipWaiting();
 });
 
-self.addEventListener('activate', (event) => {
+self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) => {
       return Promise.all(
@@ -33,28 +35,57 @@ self.addEventListener('activate', (event) => {
           }
         })
       );
-    })
+    }).then(() => self.clients.claim())
   );
-  self.clients.claim();
 });
 
-self.addEventListener('fetch', (event) => {
-  // Ignore non-GET requests or WebSocket upgrades
-  if (event.request.method !== 'GET' || event.request.url.startsWith('ws')) {
+self.addEventListener("fetch", (event) => {
+  const req = event.request;
+  if (req.method !== "GET") return;
+
+  const url = new URL(req.url);
+  // Do not intercept WebSocket connections or chrome extensions
+  if (url.protocol === "ws:" || url.protocol === "wss:" || !url.protocol.startsWith("http")) {
     return;
   }
 
+  // Navigation requests: try network first, fallback to cached index.html
+  if (req.mode === "navigate") {
+    event.respondWith(
+      fetch(req)
+        .then((networkRes) => {
+          if (networkRes && networkRes.status === 200) {
+            const clone = networkRes.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(req, clone));
+          }
+          return networkRes;
+        })
+        .catch(async () => {
+          const cachedIndex = await caches.match("/index.html");
+          if (cachedIndex) return cachedIndex;
+          return caches.match("/");
+        })
+    );
+    return;
+  }
+
+  // Static assets & scripts: Stale-while-revalidate or Cache-first
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      return fetch(event.request).catch(() => {
-        // Fallback for navigation requests
-        if (event.request.mode === 'navigate') {
-          return caches.match('/index.html');
-        }
-      });
+    caches.match(req).then((cachedRes) => {
+      const fetchPromise = fetch(req)
+        .then((networkRes) => {
+          if (networkRes && networkRes.status === 200) {
+            const clone = networkRes.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(req, clone));
+          }
+          return networkRes;
+        })
+        .catch(() => {
+          // If network failed and nothing cached, check if index fallback helps
+          return cachedRes;
+        });
+
+      return cachedRes || fetchPromise;
     })
   );
 });

@@ -2,24 +2,21 @@ import {
   Account,
   Transaction,
   CategoryItem,
-  Note,
   FollowUp,
+  Note,
   WishlistItem,
   Loan,
   AppSettings,
-} from '../types';
+} from "../types";
 
-export const CURRENT_DATA_VERSION = 'v2.7-updated-1793102400000';
+export const CURRENT_DATA_VERSION = "v2.9-2026-10-29-settled";
 
 export const DEFAULT_SETTINGS: AppSettings = {
-  theme: 'dark',
-  displayCurrency: 'SAR',
+  theme: "dark",
+  displayCurrency: "SAR",
   exchangeRateSARtoINR: 25.7,
   enableExchangeRate: true,
   enableHaptics: true,
-  isFullscreen: false,
-  cloudRelayUrl: 'https://ais-dev-cwlafjekfgwqw2oocm252g-132080948487.europe-west2.run.app',
-  brandingLabel: 'Personal Hub',
 };
 
 export const INITIAL_CATEGORIES: CategoryItem[] = [
@@ -169,6 +166,19 @@ export const INITIAL_CATEGORIES: CategoryItem[] = [
     "color": "#64748b",
     "icon": "Tag",
     "subCategories": []
+  },
+  {
+    "id": "cat-unaccounted",
+    "name": "Unaccounted",
+    "color": "#64748b",
+    "icon": "Scale",
+    "subCategories": [
+      {
+        "id": "sub-unacc-settlement",
+        "categoryId": "cat-unaccounted",
+        "name": "Monthly Settlement"
+      }
+    ]
   }
 ];
 
@@ -178,10 +188,10 @@ export const INITIAL_ACCOUNTS: Account[] = [
     "name": "SNB",
     "type": "bank",
     "openingBalanceSAR": 0,
-    "currentBalanceSAR": -738.03,
+    "currentBalanceSAR": 1471.45,
     "color": "#8b5cf6",
     "accountNumberMask": "•••• SNB",
-    "updatedAt": "2026-10-27T11:46:25.149Z"
+    "updatedAt": "2026-10-29T07:06:08.024Z"
   },
   {
     "id": "acc-2",
@@ -191,57 +201,57 @@ export const INITIAL_ACCOUNTS: Account[] = [
     "currentBalanceSAR": 0,
     "color": "#06b6d4",
     "accountNumberMask": "D360",
-    "updatedAt": "2026-10-27T11:46:25.149Z"
+    "updatedAt": "2026-10-29T07:06:08.024Z"
   },
   {
     "id": "acc-3",
     "name": "STC",
     "type": "wallet",
     "openingBalanceSAR": 0,
-    "currentBalanceSAR": 933,
+    "currentBalanceSAR": 1933,
     "color": "#10b981",
     "accountNumberMask": "STC",
-    "updatedAt": "2026-10-27T11:46:25.149Z"
+    "updatedAt": "2026-10-29T07:06:08.024Z"
   },
   {
     "id": "acc_1790855039108",
     "name": "Alinma",
     "type": "bank",
     "openingBalanceSAR": 0,
-    "currentBalanceSAR": 355.25,
+    "currentBalanceSAR": 767.43,
     "color": "#8b5cf6",
     "accountNumberMask": "Alinma",
-    "updatedAt": "2026-10-27T11:46:25.150Z"
+    "updatedAt": "2026-10-29T07:06:08.024Z"
   },
   {
     "id": "acc_1790951200102",
     "name": "Tiqmo",
     "type": "wallet",
     "openingBalanceSAR": 0,
-    "currentBalanceSAR": -5.37,
+    "currentBalanceSAR": 288.84,
     "color": "#64748b",
     "accountNumberMask": "Tiqmo",
-    "updatedAt": "2026-10-27T11:46:25.150Z"
+    "updatedAt": "2026-10-29T07:06:08.024Z"
   },
   {
     "id": "acc_1791355409897",
     "name": "CASH",
     "type": "cash",
     "openingBalanceSAR": 0,
-    "currentBalanceSAR": 3.5,
+    "currentBalanceSAR": 0,
     "color": "#10b981",
     "accountNumberMask": "CASH",
-    "updatedAt": "2026-10-27T11:46:25.150Z"
+    "updatedAt": "2026-10-29T07:06:08.024Z"
   },
   {
     "id": "acc_1791497983529",
     "name": "Rozzy",
     "type": "wallet",
     "openingBalanceSAR": 0,
-    "currentBalanceSAR": 127.5,
+    "currentBalanceSAR": 500,
     "color": "#06b6d4",
     "accountNumberMask": "Rozzy",
-    "updatedAt": "2026-10-27T11:46:25.150Z"
+    "updatedAt": "2026-10-29T07:06:08.024Z"
   },
   {
     "id": "acc_1791498669839",
@@ -251,11 +261,87 @@ export const INITIAL_ACCOUNTS: Account[] = [
     "currentBalanceSAR": 72.5,
     "color": "#3b82f6",
     "accountNumberMask": "Isalesawab",
-    "updatedAt": "2026-10-27T11:46:25.150Z"
+    "updatedAt": "2026-10-29T07:06:08.024Z"
   }
 ];
 
 export const INITIAL_TRANSACTIONS: Transaction[] = [
+  {
+    "type": "expense",
+    "amountSAR": 43.02,
+    "category": "Food",
+    "subCategory": "Groceries",
+    "accountId": "acc-1",
+    "note": "Panda Groceries, Coal for BBQ",
+    "date": "2026-10-27",
+    "id": "tx_1793174292725_oc6z",
+    "createdAt": "2026-10-28T07:58:12.725Z"
+  },
+  {
+    "type": "expense",
+    "amountSAR": 22.5,
+    "category": "Food",
+    "accountId": "acc-1",
+    "note": "Food al baik",
+    "date": "2026-10-27",
+    "id": "tx_1793174208098_q21f",
+    "createdAt": "2026-10-28T07:56:48.098Z"
+  },
+  {
+    "id": "tx_closing_rozzy_unaccounted_127_50",
+    "type": "expense",
+    "amountSAR": 127.5,
+    "accountId": "acc_1791497983529",
+    "category": "Unaccounted",
+    "subCategory": "Monthly Settlement",
+    "date": "2026-10-27",
+    "note": "Closing – Unaccounted",
+    "createdAt": "2026-10-27T23:53:00.000Z"
+  },
+  {
+    "id": "tx_closing_cash_unaccounted_3_50",
+    "type": "expense",
+    "amountSAR": 3.5,
+    "accountId": "acc_1791355409897",
+    "category": "Unaccounted",
+    "subCategory": "Monthly Settlement",
+    "date": "2026-10-27",
+    "note": "Closing – Unaccounted",
+    "createdAt": "2026-10-27T23:52:00.000Z"
+  },
+  {
+    "id": "tx_closing_tiqmo_unaccounted_6_71",
+    "type": "income",
+    "amountSAR": 6.71,
+    "accountId": "acc_1790951200102",
+    "category": "Unaccounted",
+    "subCategory": "Monthly Settlement",
+    "date": "2026-10-27",
+    "note": "Closing – Unaccounted",
+    "createdAt": "2026-10-27T23:51:00.000Z"
+  },
+  {
+    "id": "tx_closing_alinma_unaccounted_87_82",
+    "type": "expense",
+    "amountSAR": 87.82,
+    "accountId": "acc_1790855039108",
+    "category": "Unaccounted",
+    "subCategory": "Monthly Settlement",
+    "date": "2026-10-27",
+    "note": "Closing – Unaccounted",
+    "createdAt": "2026-10-27T23:50:00.000Z"
+  },
+  {
+    "id": "tx_expense_snb_vision_bank_5380_20261027",
+    "type": "expense",
+    "amountSAR": 5380,
+    "accountId": "acc-1",
+    "category": "Bills",
+    "subCategory": "Utilities",
+    "date": "2026-10-27",
+    "note": "Vision Bank",
+    "createdAt": "2026-10-27T09:00:00.000Z"
+  },
   {
     "id": "tx_1793090629318_c9bt",
     "type": "expense",
@@ -265,6 +351,94 @@ export const INITIAL_TRANSACTIONS: Transaction[] = [
     "date": "2026-10-27",
     "note": "Gym fees",
     "createdAt": "2026-10-27T08:43:49.318Z"
+  },
+  {
+    "id": "tx_transfer_snb_rozzy_500_20261027",
+    "type": "transfer",
+    "amountSAR": 500,
+    "accountId": "acc-1",
+    "toAccountId": "acc_1791497983529",
+    "category": "Transfer",
+    "date": "2026-10-27",
+    "note": "Groceries (cash)",
+    "createdAt": "2026-10-27T08:40:00.000Z"
+  },
+  {
+    "id": "tx_transfer_snb_alinma_500_20261027",
+    "type": "transfer",
+    "amountSAR": 500,
+    "accountId": "acc-1",
+    "toAccountId": "acc_1790855039108",
+    "category": "Transfer",
+    "date": "2026-10-27",
+    "note": "Pocket money",
+    "createdAt": "2026-10-27T08:35:00.000Z"
+  },
+  {
+    "id": "tx_transfer_snb_issale_tiqmo_137_5_20261027",
+    "type": "transfer",
+    "amountSAR": 137.5,
+    "accountId": "acc-1",
+    "toAccountId": "acc_1790951200102",
+    "category": "Transfer",
+    "date": "2026-10-27",
+    "note": "Issale Sawab (transfer to Tiqmo account only)",
+    "createdAt": "2026-10-27T08:30:00.000Z"
+  },
+  {
+    "id": "tx_transfer_snb_tiqmo_150_20261027",
+    "type": "transfer",
+    "amountSAR": 150,
+    "accountId": "acc-1",
+    "toAccountId": "acc_1790951200102",
+    "category": "Transfer",
+    "date": "2026-10-27",
+    "note": "Gym fees and Issale Sawab",
+    "createdAt": "2026-10-27T08:25:00.000Z"
+  },
+  {
+    "id": "tx_expense_d360_linked_1057_5_20261027",
+    "type": "expense",
+    "amountSAR": 1057.5,
+    "accountId": "acc-2",
+    "category": "Family",
+    "subCategory": "Home",
+    "date": "2026-10-27",
+    "note": "Home 800, Mummy 120, Sadaqa 137.5",
+    "createdAt": "2026-10-27T08:22:00.000Z"
+  },
+  {
+    "id": "tx_transfer_snb_d360_1057_5_20261027",
+    "type": "transfer",
+    "amountSAR": 1057.5,
+    "accountId": "acc-1",
+    "toAccountId": "acc-2",
+    "category": "Transfer",
+    "date": "2026-10-27",
+    "note": "Home, Mummy, Sadaqa",
+    "createdAt": "2026-10-27T08:20:00.000Z"
+  },
+  {
+    "id": "tx_transfer_snb_stc_1000_20261027",
+    "type": "transfer",
+    "amountSAR": 1000,
+    "accountId": "acc-1",
+    "toAccountId": "acc-3",
+    "category": "Transfer",
+    "date": "2026-10-27",
+    "note": "Petrol",
+    "createdAt": "2026-10-27T08:15:00.000Z"
+  },
+  {
+    "id": "tx_income_snb_11000_20261027",
+    "type": "income",
+    "amountSAR": 11000,
+    "accountId": "acc-1",
+    "category": "Personal",
+    "subCategory": "Salary",
+    "date": "2026-10-27",
+    "note": "Incoming Salary / Income SNB",
+    "createdAt": "2026-10-27T08:00:00.000Z"
   },
   {
     "id": "tx_1793045941416_c5sc",
@@ -1200,17 +1374,17 @@ export const INITIAL_WISHLISTS: WishlistItem[] = [
 ];
 
 export const STORAGE_KEYS = {
-  SETTINGS: 'phub_settings_v2',
-  ACCOUNTS: 'phub_accounts_v2',
-  TRANSACTIONS: 'phub_transactions_v2',
-  CATEGORIES: 'phub_categories_v2',
-  NOTES: 'phub_notes_v2',
-  FOLLOWUPS: 'phub_followups_v2',
-  WISHLISTS: 'phub_wishlists_v2',
-  LOANS: 'phub_loans_v2',
-  DATA_VERSION: 'phub_data_version_v2',
-  HIDE_AMOUNTS: 'phub_hide_amounts',
-  GATE_STATE: 'phub_gate_state_v2',
+  ACCOUNTS: "personal_hub_accounts",
+  TRANSACTIONS: "personal_hub_transactions",
+  CATEGORIES: "personal_hub_categories",
+  FOLLOWUPS: "personal_hub_followups",
+  NOTES: "personal_hub_notes",
+  WISHLISTS: "personal_hub_wishlists",
+  LOANS: "personal_hub_loans",
+  SETTINGS: "personal_hub_settings",
+  DATA_VERSION: "personal_hub_data_version",
+  GATE_STATE: "personal_hub_gate_state",
+  AUTO_BACKUPS: "personal_hub_auto_backups",
 };
 
 export function loadFromStorage<T>(key: string, defaultValue: T): T {
@@ -1219,7 +1393,7 @@ export function loadFromStorage<T>(key: string, defaultValue: T): T {
     if (!item) return defaultValue;
     return JSON.parse(item);
   } catch (err) {
-    console.error(`Failed to load ${key} from localStorage:`, err);
+    console.error(`Error loading key ${key} from localStorage:`, err);
     return defaultValue;
   }
 }
@@ -1228,7 +1402,7 @@ export function saveToStorage<T>(key: string, value: T): void {
   try {
     localStorage.setItem(key, JSON.stringify(value));
   } catch (err) {
-    console.error(`Failed to save ${key} to localStorage:`, err);
+    console.error(`Error saving key ${key} to localStorage:`, err);
   }
 }
 
@@ -1236,12 +1410,12 @@ export function clearAllStorage(): void {
   try {
     Object.values(STORAGE_KEYS).forEach((k) => localStorage.removeItem(k));
   } catch (err) {
-    console.error('Failed to clear storage:', err);
+    console.error("Error clearing storage:", err);
   }
 }
 
-export function parsePersonalHubJson(json: any, exchangeRate: number = 25.7) {
-  if (!json) {
+export function parsePersonalHubJson(jsonObj: any, fallbackRate: number = 25.7) {
+  if (!jsonObj || typeof jsonObj !== "object") {
     return {
       accounts: [],
       transactions: [],
@@ -1250,18 +1424,22 @@ export function parsePersonalHubJson(json: any, exchangeRate: number = 25.7) {
       notes: [],
       loans: [],
       wishlists: [],
-      exchangeRate: 25.7,
+      exchangeRate: fallbackRate,
     };
   }
-  const cols = json.dataCollections || json;
+  const col = jsonObj.dataCollections || jsonObj;
   return {
-    accounts: cols.accounts || [],
-    transactions: cols.transactions || [],
-    categories: cols.categories || [],
-    followups: cols.tasks || cols.followups || [],
-    notes: cols.notes || [],
-    loans: cols.loans || [],
-    wishlists: cols.wishlists || [],
-    exchangeRate: cols.exchangeRate?.rateSarToInr || exchangeRate,
+    accounts: Array.isArray(col.accounts) ? col.accounts : [],
+    transactions: Array.isArray(col.transactions) ? col.transactions : [],
+    categories: Array.isArray(col.categories) ? col.categories : [],
+    followups: Array.isArray(col.tasks)
+      ? col.tasks
+      : Array.isArray(col.followups)
+      ? col.followups
+      : [],
+    notes: Array.isArray(col.notes) ? col.notes : [],
+    loans: Array.isArray(col.loans) ? col.loans : [],
+    wishlists: Array.isArray(col.wishlists) ? col.wishlists : [],
+    exchangeRate: typeof col.exchangeRate === "number" ? col.exchangeRate : fallbackRate,
   };
 }

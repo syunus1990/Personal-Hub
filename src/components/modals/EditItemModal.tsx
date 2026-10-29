@@ -1110,17 +1110,24 @@ export const EditItemModal: React.FC = () => {
                 />
               </div>
 
-              {/* FLOW STEP 2: Amount in SAR (With live INR converted preview) */}
+              {/* FLOW STEP 2: Amount in SAR (Shows live Available Balance in selected account) */}
               <div>
                 <div className="flex items-center justify-between mb-1">
                   <label className="block text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
                     Amount in SAR (﷼) *
                   </label>
-                  {txAmount && parseFloat(txAmount) > 0 && (
-                    <span className="text-[10px] text-purple-600 dark:text-purple-300 font-semibold tabular-nums">
-                      ≈ ₹{(parseFloat(txAmount) * 25.7).toLocaleString('en-IN', { maximumFractionDigits: 2 })} INR
-                    </span>
-                  )}
+                  {(() => {
+                    const selAccount = accounts.find((a) => a.id === txAccountId) || accounts[0];
+                    const curBal = selAccount?.currentBalanceSAR ?? 0;
+                    return (
+                      <span className="text-[11px] font-semibold tabular-nums flex items-center gap-1">
+                        <span className="text-slate-400 dark:text-slate-500 font-normal">Available:</span>
+                        <span className={curBal >= 0 ? "text-emerald-600 dark:text-emerald-400 font-bold" : "text-rose-500 font-bold"}>
+                          {curBal.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} SAR
+                        </span>
+                      </span>
+                    );
+                  })()}
                 </div>
                 <div className="relative flex items-center">
                   <span className="absolute left-3.5 text-slate-400 font-bold text-xs flex items-center gap-1">
